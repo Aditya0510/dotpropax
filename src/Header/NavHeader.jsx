@@ -33,9 +33,7 @@ const NavHeader = () => {
   }
       ]
   return (
-    <div
-    className="flex justify-center"
-    > 
+   
       <MainWidthContainer>
         <div className="flex justify-between items-center">
           <img src={dotProLogo} alt="dot pro logo" />
@@ -59,6 +57,6 @@ const NavHeader = () => {
     </div>
       </div>
       </MainWidthContainer>  
-  </div>)
+)
 }
 export default NavHeader;

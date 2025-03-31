@@ -1,7 +1,8 @@
 const Button = ({ text = "", varient = "primary" , icon=null,children,className="" }) => {
   const buttonType = {
     primary: "bg-[#2B5592]",
-    secondary:"bg-[#F6821F]",
+    secondary: "bg-[#F6821F]",
+    tertiary:"bg-[#F3F8FF] text-[#2B5592]"
   }
   return (
     <button

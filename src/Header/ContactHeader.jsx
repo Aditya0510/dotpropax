@@ -9,7 +9,7 @@ import MainWidthContainer from "../Layouts/MainWidthContainer";
 
 const ContactHeader = () => {
   return (
-    <div className="py-[8px] bg-[#F3F4F5] flex justify-center">
+    <div className="py-[8px] bg-[#F3F4F5]">
  <MainWidthContainer className="">
 <div className="flex justify-between">      
 <div className="flex gap-[8px]">

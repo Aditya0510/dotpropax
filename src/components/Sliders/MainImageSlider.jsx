@@ -1,32 +1,53 @@
+import { useState } from "react";
 import ArrowIcon from "../../assets/Icons/ArrowIcon";
 
-const MainImageSlider = ({sliderArray=[]}) => {
-  return(<div className="flex flex-col gap-[24px]">
-        <div>
-      <div className="relative flex gap-[32px]">
-        {sliderArray?.map((prof) => <div className="relative w-[437px] h-[621px]"
-             key={prof?.text}
-            >
-              <img src={prof?.image} alt={prof?.text}
-               className="h-full"
-              />
-              <div className="absolute w-full h-full bottom-0 bg-[#00000000] bg-gradient-to-b from-[#00000000] to-[#000000]"></div>
-              <div className="absolute bottom-0 w-full py-[24px] ps-[24px] pe-[46px] text-white
-              font-[600] text-[16px] leading-[24px]
-              ">{prof.text}</div>
-           </div>)}
-        
+const MainImageSlider = ({ sliderArray = [] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const totalSlides = sliderArray.length;
 
-          </div>
+  if (!sliderArray.length) return <p>No images found</p>;
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+  };
+
+  return (
+    <div className="flex flex-col gap-6">
+      {/* Slider Container */}
+      <div className="relative w-[100%] h-[621px] overflow-hidden">
+        <div
+          className="flex transition-transform duration-700 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 70}%)` }}
+        >
+          {sliderArray.map((prof, index) => (
+            <div key={index} className="w-[70%] h-full flex-shrink-0 mr-[5%] relative">
+              <img src={prof?.image} alt={prof?.text} className="w-full h-full object-cover" />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+              {/* Text Content */}
+              <div className="absolute bottom-0 w-full py-6 px-6 text-white font-semibold text-lg">
+                {prof.text}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="flex gap-4">
+        <button onClick={prevSlide} className="p-2 border-2 rounded border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+          <ArrowIcon className="rotate-180" />
+        </button>
+        <button onClick={nextSlide} className="p-2 border-2 rounded border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+          <ArrowIcon />
+        </button>
+      </div>
     </div>
-    <div className="flex gap-[10px]">
-      <button className="rounded-[4px] border-2 p-[8px] border-[#2B5592] text-[#2B5592]">
-          <ArrowIcon className="rotate-180"/>
-      </button>
-      <button className="rounded-[4px] border-2 p-[8px] border-[#2B5592] text-[#2B5592]">
-          <ArrowIcon/>
-      </button>
-    </div>
-      </div>)
-}
+  );
+};
+
 export default MainImageSlider;

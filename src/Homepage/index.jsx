@@ -1,6 +1,7 @@
 import MainLayout from "../Layouts/MainLayout";
 import MainWidthContainer from "../Layouts/MainWidthContainer";
 import CustomerComponent from "./Components/CustomerComponent";
+import EnquiryComponent from "./Components/EnquiryComponent";
 import FeedbackComponent from "./Components/FeedbackComponent";
 import HeroComponent from "./Components/HeroComponent";
 import MissionComponent from "./Components/MissionComponent";
@@ -15,7 +16,9 @@ const Homepage = () => {
       <QualityComponent />
       <CustomerComponent />
       <PerformanceProofComponent />
-      <FeedbackComponent/>
+      <FeedbackComponent />
+      <EnquiryComponent />
+      
     </MainLayout>
   )
 }

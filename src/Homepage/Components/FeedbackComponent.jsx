@@ -2,6 +2,8 @@ import Button from "../../components/Button";
 import MainWidthContainer from "../../Layouts/MainWidthContainer";
 import testimonial1 from "../../assets/testimonialImages/testimonial1.png";
 import QuoteIcon from "../../assets/Icons/QuoteIcon";
+import TestimonialSlider from "../../components/Sliders/TestimonialSlider";
+
 const FeedbackComponent = () => {
   return (<div className="mt-[82px]">
     <MainWidthContainer>
@@ -16,7 +18,8 @@ const FeedbackComponent = () => {
             <h2 className="font-[700] text-[48px] leading-[100%]">What Our Customer  Says</h2>
         </div>
         <div className="col-span-3 flex gap-[24px]">
-          <div className="flex flex-col justify-center items-center w-[60%] gap-[12px]">
+          <TestimonialSlider/>
+          {/* <div className="flex flex-col justify-center items-center w-[60%] gap-[12px]">
   <img
             src={testimonial1}
             className="h-[364px] w-[364px]"
@@ -50,7 +53,7 @@ One of the biggest challenges in the hygiene industry is supply reliability. Dot
               </div>
             </div>
           </div>
-         
+          */}
         </div>
       </div>
     </MainWidthContainer>

@@ -34,13 +34,16 @@ const MissionComponent = () => {
 
   const profiles = [{
     image: AnilImage,
-    text:"Anil Mali"
+    text: "Anil Mali",
+    desc:"lorem ispum lorem ispum lorem ispum lorem ispum lorem ispum"
   },{
     image: NareshImage,
-    text:"Naresh Sikshi"
+    text: "Naresh Sikshi",
+      desc:"lorem ispum lorem ispum lorem ispum lorem ispum lorem ispum"
   },{
     image: AnilKum,
-    text:"Anil Kumawat"
+    text: "Anil Kumawat",
+      desc:"lorem ispum lorem ispum lorem ispum lorem ispum lorem ispum"
   },]
 
   return (<div className="mt-[220px]">
@@ -79,19 +82,33 @@ const MissionComponent = () => {
             </div>
               
           </div>
-          <div className="flex justify-between mt-[32px]">
-            {profiles?.map((prof) => <div className="relative w-[165px] h-[217px]"
-              
-             key={prof?.text}
-            >
-              <img src={prof?.image} alt={prof?.text}
-               className="h-full"
-              />
-              <div className="absolute w-full h-full bottom-0 bg-[#00000000] bg-gradient-to-b from-[#00000000] to-[#000000]"></div>
-              <div className="absolute bottom-0 w-full text-center text-white
-              font-[600] text-[16px] leading-[24px]
-              ">{prof.text}</div>
-           </div>)}
+          <div className="flex mt-[32px] gap-[16px]">
+         {profiles?.map((prof) => (
+  <div
+    className="relative w-[33.33%] h-[217px] cursor-pointer overflow-hidden group rounded-[4px]"
+    key={prof?.text}
+  >
+    {/* Profile Image */}
+    <img src={prof?.image} alt={prof?.text} className="h-full w-full object-cover" />
+
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+     <p className="absolute bottom-4 w-full text-white text-center p-2 rounded-md 
+      font-[600] text-[16px] opacity-100 transition-opacity duration-300 
+      group-hover:opacity-0">
+      {prof.text}
+    </p>
+    {/* Description (Hidden Initially, Shown on Hover) */}
+    <div
+      className="absolute bottom-0 w-full h-full flex flex-col justify-end text-center text-white
+      font-[600] text-[16px] leading-[24px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4"
+             >
+                <p className="p-2 rounded-md">{prof.text}</p>
+      <p className="p-2 rounded-md font-[200]">{prof.desc}</p>
+    </div>
+  </div>
+))}
+
           </div> 
         </div>
       </div>

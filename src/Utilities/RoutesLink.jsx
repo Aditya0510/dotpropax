@@ -1,3 +1,4 @@
 export const RoutesLink = {
-  homepage:"/"
+  homepage: "/",
+  facilities:"/facilities",
 }

@@ -36,11 +36,12 @@ const PageHeaderImageSlider = ({ imageList = FacilitySlider }) => {
           <img
             src={images[positions[1]].src}
             alt={images[positions[1]].description}
-            className="w-[100%] object-cover aspect-video transform scale-105 transition-transform duration-700"
+            className="w-[100%]  aspect-video transform transition-transform duration-700"
           />
-          <p className="absolute bottom-0 left-0 p-[10px] md:p-[20px] xl:p-[30px] text-white bg-black bg-opacity-50 transition-opacity duration-700">
+          <p className="absolute bottom-0 left-0 p-[10px] md:p-[20px] xl:p-[30px] text-white  z-30  transition-opacity duration-700">
             {images[positions[1]]?.description}
           </p>
+           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]"></div>
         </div>
         <div className="w-[30%] max-sm:hidden transition-transform duration-700 ease-in-out">
           <img

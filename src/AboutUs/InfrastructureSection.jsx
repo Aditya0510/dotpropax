@@ -30,26 +30,25 @@ const infrastructure = [
   },
 ]
 
-const InfrastructureSection = () => {
+const InfrastructureSection = ({ infrastructureArray = infrastructure }) => {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "32px" }}>
       {/* First column */}
       <div>
         <Tags title="Facilities" />
         <h2>Infrastructure and Facilities</h2>
       </div>
-
       {/* Second column */}
       <div>
         <div className="grid grid-cols-2 gap-[32px]">
-        {infrastructure.map((item, index) => (
-          <IconWithTextDescription
-            key={index}
-            title={item.title}
-            icon={SelectedIcon}
-            description={item.description}
-          />
-        ))}
+          {infrastructureArray.map((item, index) => (
+            <IconWithTextDescription
+              key={index}
+              title={item.title}
+              icon={SelectedIcon}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
     </div>

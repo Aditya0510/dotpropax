@@ -102,8 +102,8 @@ const HeroComponent = () => {
          
 
     </div> 
-    <div className="absolute -bottom-24 left-44 flex gap-[34px] justify-center">
-     {ProductArray?.map((prod)=><div className="rounded-[4px] h-[200px] w-[210px] p-[4px] bg-white">
+    <div className="absolute -bottom-24 w-full flex gap-[34px] justify-center">
+     {ProductArray?.map((prod)=><div className="rounded-[4px] h-[200px] w-[14%] p-[4px] bg-white">
         <img src={prod?.image} />
       </div>)}
     </div>

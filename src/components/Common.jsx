@@ -7,3 +7,22 @@ export const Tags = ({ title = "", className = "" }) => {
     </span>
   )
 }
+
+export const IconWithTextDescription = ({ icon,title,description, container, className = "" }) => {
+  return (
+    <div
+    className={`flex flex-col flex-start text-left  ${container}`}
+  >
+    <div className="flex flex-row items-center">
+      <img
+        src={icon}
+        alt="right-icon"
+        className="w-[20px] h-[20px]"
+      />
+      <h6 className="ml-[10px]">{title}</h6>
+    </div>
+    <p className="leading-[28px] font-[16px] text-[#565E69] mt-[10px]">
+      {description}
+    </p>
+  </div>)
+}

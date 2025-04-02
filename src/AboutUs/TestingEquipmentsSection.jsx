@@ -1,5 +1,5 @@
 import React from "react"
-import { Tags } from "../components/Common"
+import { IconWithTextDescription, Tags } from "../components/Common"
 import RightIcon from "../assets/Icons/right-icon.png"
 import TestingThumbnail from "../assets/Testing/testing.png"
 
@@ -37,29 +37,21 @@ const TestingEquipmentData = [
 const TestingEquipmentsSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px]">
+
       <div className="">
         <Tags title="Testing Equipments" />
         <h2 className="">Testing Equipments</h2>
         {TestingEquipmentData.map((item, index) => (
-          <div
-            className={`flex flex-col flex-start text-left ${
-              index !== 0 ? "mt-[48px]" : ""
-            }`}
-          >
-            <div className="flex flex-row items-center">
-              <img
-                src={RightIcon}
-                alt="right-icon"
-                className="w-[20px] h-[20px]"
-              />
-              <h6 className="ml-[10px]">{item?.title}</h6>
-            </div>
-            <p className="leading-[28px] font-[16px] text-[#565E69] mt-[10px]">
-              {item?.description}
-            </p>
-          </div>
+          <IconWithTextDescription
+            key={index}
+            title={item.title}
+            icon={RightIcon}
+            description={item.description}
+            container={`${index !== 0 ? "mt-[48px]" : ""}`}
+          />
         ))}
       </div>
+
       <div className="flex flex-col md:flex-row items-center">
         <div className="flex flex-col max-md:w-[100%]">
           <img
@@ -81,6 +73,7 @@ const TestingEquipmentsSection = () => {
           />
         </div>
       </div>
+      
     </div>
   )
 }

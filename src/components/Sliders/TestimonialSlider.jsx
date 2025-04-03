@@ -2,19 +2,19 @@ import { useState, useEffect } from "react";
 import testimonial1 from "../../assets/testimonialImages/testimonial1.png";
 import QuoteIcon from "../../assets/Icons/QuoteIcon";
 const testimonials = [
-  { 
-    image: testimonial1, 
-    name: "Mr. Ramesh Mehta", 
-    role: "Customer", 
-    quote: "Unmatched Quality and consistency!", 
-    description: "Unmatched Quality and Consistency! One of the biggest challenges in the hygiene industry is supply reliability. Dotpropack has never let us down. Their prompt deliveries and well-managed logistics make them a valuable partner." 
+  {
+    image: testimonial1,
+    name: "Mr. Ramesh Mehta",
+    role: "Customer",
+    quote: "Unmatched Quality and consistency!",
+    description: "Unmatched Quality and Consistency! One of the biggest challenges in the hygiene industry is supply reliability. Dotpropack has never let us down. Their prompt deliveries and well-managed logistics make them a valuable partner."
   },
-  { 
-    image: testimonial1, 
-    name: "Ms. lucy Sharma", 
-    role: "Business Owner", 
-    quote: "Great Service!", 
-    description: "Dotpropack provides excellent hygiene solutions and is very reliable." 
+  {
+    image: testimonial1,
+    name: "Ms. lucy Sharma",
+    role: "Business Owner",
+    quote: "Great Service!",
+    description: "Dotpropack provides excellent hygiene solutions and is very reliable."
   }
 ];
 
@@ -43,9 +43,9 @@ const TestimonialSlider = () => {
           {/* Dots Indicator */}
           <div className="flex gap-[4px] justify-end items-center">
             {testimonials.map((_, dotIndex) => (
-              <span 
-                key={dotIndex} 
-                className={`w-[12px] h-[12px] rounded-full ${currentIndex === dotIndex ? "w-[12px] h-[12px] bg-[#2B5592]" : "w-[8px] h-[8px] bg-gray-400"}`} 
+              <span
+                key={dotIndex}
+                className={`w-[12px] h-[12px] rounded-full ${currentIndex === dotIndex ? "w-[12px] h-[12px] bg-[#2B5592]" : "w-[8px] h-[8px] bg-gray-400"}`}
               />
             ))}
           </div>
@@ -53,9 +53,9 @@ const TestimonialSlider = () => {
 
         {/* Right Text */}
         <div className="flex flex-col gap-[24px] w-[40%]">
-            <QuoteIcon/>
+          <QuoteIcon />
           <p className="font-[700] text-[14px] leading-[20px]">{testimonials[currentIndex].quote}</p>
-          <p className="font-[400] text-[16px] leading-[28px]">{testimonials[currentIndex].description}</p>
+          <p className="font-[400] text-[16px] leading-[28px] text-[#414750]">{testimonials[currentIndex].description}</p>
           {/* Profile Section */}
           <div className="flex gap-[14px] items-center">
             <img src={testimonials[currentIndex].image} className="rounded-full h-[80px] w-[80px]" />

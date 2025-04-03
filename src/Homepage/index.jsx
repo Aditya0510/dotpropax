@@ -1,5 +1,4 @@
 import MainLayout from "../Layouts/MainLayout";
-import MainWidthContainer from "../Layouts/MainWidthContainer";
 import CustomerComponent from "./Components/CustomerComponent";
 import EnquiryComponent from "./Components/EnquiryComponent";
 import FeedbackComponent from "./Components/FeedbackComponent";
@@ -18,7 +17,7 @@ const Homepage = () => {
       <PerformanceProofComponent />
       <FeedbackComponent />
       <EnquiryComponent />
-      
+
     </MainLayout>
   )
 }

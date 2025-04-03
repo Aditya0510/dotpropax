@@ -8,34 +8,38 @@ const CustomerComponent = () => {
   const customerList = [
     {
       image: ramson,
-      className:"w-[170px] h-[45px]"
-      
-    },  {
+      className: ""
+
+    }, {
       image: millenium,
-     className:"w-[180px] h-[80px]"
-      
-    },  {
+      className: ""
+
+    }, {
       image: panhealth,
-      className:"w-[300px] h-[45px]"
-      
-    },{
+      className: ""
+
+    }, {
       image: bella,
-      className:"w-[168px] h-[80px]"
-      
-    },{
+      className: ""
+
+    }, {
       image: noble,
-      className:"w-[100px] h-[80px]"
-      
+      className: ""
+
     },
   ]
   return (<div className="mt-[180px] mb-[60px]">
     <MainWidthContainer>
       <h2 className="font-[700] text-[48px] text-center">Trusted by beloved customer</h2>
-      <div className="flex gap-[42px] justify-center items-center mt-[48px] ">
-        {customerList?.map((cust, index) => <img
-          key={index}
-           className={`${cust?.className} mix-blend-luminosity grayscale`}
-          src={cust?.image} />)}
+      <div className="grid grid-cols-5 justify-between items-center mt-[48px] w-full">
+        {customerList?.map((cust, index) =>
+          <div className={`items-end ${index === customerList.length - 1 ? "col-start-5 justify-self-end" : ""}`}>
+            <img
+              key={index}
+              className={`${cust?.className} h-[70px] w-full object-contain mix-blend-luminosity  grayscale`}
+              src={cust?.image} />
+          </div>
+        )}
       </div>
     </MainWidthContainer>
   </div>)

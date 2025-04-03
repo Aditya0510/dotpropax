@@ -5,14 +5,59 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'DM sans'; /* Replace with actual font name */
-    src: url('../src/assets/Fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('opentype'),
-         url('../src/assets/Fonts/DMSans-VariableFont_opsz\,wght.ttf') format('opentype');
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-Thin.ttf') format('opentype');
+  font-weight: 100;
 }
+
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-ExtraLight.ttf') format('opentype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-Light.ttf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-Regular.ttf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-Medium.ttf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-Bold.ttf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/assets/Fonts/DMSans-ExtraBold.ttf') format('opentype');
+  font-weight: 800;
+}
+
+
+
 
 body{
   margin: 0px;
-  font-family: 'DM sans',sans-serif;
+  font-family: 'DM Sans',sans-serif;
 }
 
 /* font classes starts here  */

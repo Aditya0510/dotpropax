@@ -4,11 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+    font-family: 'DM sans'; /* Replace with actual font name */
+    src: url('../src/assets/Fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('opentype'),
+         url('../src/assets/Fonts/DMSans-VariableFont_opsz\,wght.ttf') format('opentype');
+}
 
 body{
   margin: 0px;
-    font-family: "DM Sans", sans-serif;
+  font-family: 'DM sans',sans-serif;
 }
 
 /* font classes starts here  */

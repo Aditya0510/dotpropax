@@ -39,10 +39,10 @@ const MainImageSlider = ({ sliderArray = [] }) => {
 
       {/* Navigation Buttons */}
       <div className="flex gap-4">
-        <button onClick={prevSlide} className="p-2 border-2 rounded border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+        <button onClick={prevSlide} className="p-2 border-2 rounded border-[#2B5592] text-[#2B5592] hover:bg-[#2B5592] hover:text-white transition">
           <ArrowIcon className="rotate-180" />
         </button>
-        <button onClick={nextSlide} className="p-2 border-2 rounded border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+        <button onClick={nextSlide} className="p-2 border-2 rounded border-[#2B5592] text-[#2B5592] hover:bg-[#2B5592] hover:text-white transition">
           <ArrowIcon />
         </button>
       </div>

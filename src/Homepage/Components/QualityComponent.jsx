@@ -40,7 +40,7 @@ const QualityComponent = () => {
       <div className="mt-[83px] flex flex-col gap-[32px]">
         <div
           onClick={() => setCurrentTab(1)}
-          className={`flex gap-[24px] w-[90%] p-[24px] ${currentTab == 1 && 'bg-[#F3F8FF]  rounded-[4px]'}`}
+          className={`cursor-pointer flex gap-[24px] w-[90%] p-[24px] ${currentTab == 1 && 'bg-[#F3F8FF]  rounded-[4px]'}`}
         >
           <div>
             <div className="h-[60px] w-[60px] bg-[#F9F9FB] rounded-full flex items-center justify-center" >
@@ -54,7 +54,7 @@ const QualityComponent = () => {
         </div>
         <div
           onClick={() => setCurrentTab(2)}
-          className={`flex gap-[24px] w-[90%] p-[24px] ${currentTab == 2 && 'bg-[#F3F8FF]  rounded-[4px] '}`}>
+          className={`cursor-pointer flex gap-[24px] w-[90%] p-[24px] ${currentTab == 2 && 'bg-[#F3F8FF]  rounded-[4px] '}`}>
           <div>
             <div className="h-[60px] w-[60px] bg-[#F9F9FB] rounded-full flex items-center justify-center" >
               <CloudAiIcon />

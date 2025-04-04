@@ -45,7 +45,7 @@ const NavHeader = () => {
             >
               <NavLink
                 to={header?.link}
-                className="contact-text no-underline !font-[600] !text-[16px] ">{header?.text}
+                className="contact-text no-underline !font-[600] !text-[14px] ">{header?.text}
                 {header?.number && <span className="font-[700] text-[14px] leading-[20px] text-[#FFFFFF] bg-[#2B5592] rounded-[50px] px-[12px] py-[2px]">{header?.number}</span>}
               </NavLink>
             </li>)}

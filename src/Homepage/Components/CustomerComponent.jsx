@@ -31,9 +31,9 @@ const CustomerComponent = () => {
   return (<div className="mt-[180px] mb-[60px]">
     <MainWidthContainer>
       <h2 className="font-[700] text-[48px] text-center">Trusted by beloved customer</h2>
-      <div className="grid grid-cols-5 justify-between items-center mt-[48px] w-full">
+      <div className="flex flex-row justify-between items-center mt-[48px] w-full">
         {customerList?.map((cust, index) =>
-          <div className={`items-end ${index === customerList.length - 1 ? "col-start-5 justify-self-end" : ""}`}>
+          <div className={``}>
             <img
               key={index}
               className={`${cust?.className} h-[70px] w-full object-contain mix-blend-luminosity  grayscale`}

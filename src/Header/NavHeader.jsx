@@ -22,7 +22,7 @@ const NavHeader = () => {
     number: ""
   }, {
     text: "Partners",
-    link: "",
+    link: RoutesLink?.partners,
     number: "03"
   }, {
     text: "Customers",

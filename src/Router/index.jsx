@@ -3,6 +3,7 @@ import Homepage from "../Homepage";
 import { RoutesLink } from "../Utilities/RoutesLink";
 import Facilities from "../Pages/Facilities";
 import Customers from "../Pages/Customers";
+import Partners from "../Pages/Partners";
 
 const Router = () => {
   const RoutesArray = [
@@ -17,6 +18,10 @@ const Router = () => {
     {
       path: RoutesLink?.customers,
       route: <Customers />
+    },
+    {
+      path: RoutesLink?.partners,
+      route: <Partners/>
     }
   ]
   return (<BrowserRouter>

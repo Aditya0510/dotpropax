@@ -7,6 +7,7 @@ const HeaderSliderComponent = ({
   text,
   buttons = [],
   SliderData = [],
+  descriptionStyle=''
 }) => {
   return (
     <div className="bg-[#F3F8FF] pb-[42px]">
@@ -27,7 +28,7 @@ const HeaderSliderComponent = ({
       </MainWidthContainer>
 
       <div>
-        <PageHeaderImageSlider imageList={SliderData} />
+        <PageHeaderImageSlider imageList={SliderData} descriptionStyle={descriptionStyle}/>
       </div>
     </div>
   )

@@ -3,4 +3,6 @@ export const RoutesLink = {
   facilities:"/facilities",
   customers:"/customers",
   partners:"/partners",
+  products:"/products",
+  aboutUs:"/about-us",
 }

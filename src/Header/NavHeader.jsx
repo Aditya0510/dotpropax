@@ -14,7 +14,7 @@ const NavHeader = () => {
     count: ""
   }, {
     text: "Products",
-    link: "",
+    link: RoutesLink?.products,
     count: ""
   }, {
     text: "Facilities",

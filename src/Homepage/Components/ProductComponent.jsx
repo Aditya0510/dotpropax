@@ -1,71 +1,100 @@
-import React, { useState } from 'react'
-import ImageSlider from '../../components/Slider/Index';
-import {productSampleData} from '../../Utilities/dummyProductData'
-const Download  =()=> <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"/>
+import React, { useState } from "react"
+import ImageSlider from "../../components/Slider/Index"
+import { productSampleData } from "../../Utilities/dummyProductData"
+import MainWidthContainer from "../../Layouts/MainWidthContainer"
+import { Tags } from "../../components/Common"
+import DownloadIcon from "../../assets/Icons/DownloadIcon"
+import SendIcon from "../../assets/Icons/sendIcon"
+import RequestSampleIcon from "../../assets/Icons/RequestSampleIcon"
 
-const ProductComponent = ({product=productSampleData}) => {
 
-    return (
+const ProductComponent = ({
+  product = productSampleData,
+  isReverse = false,
+}) => {
+  return (
+    <div
+      className={`min-h-[100dvh] ${
+        isReverse ? "bg-[#F3F8FF]" : "bg-white"
+      } flex justify-center items-center py-[32px]`}
+    >
+      <MainWidthContainer>
         <div className=" p-4">
-          {/* Tab Buttons */}
-         
-    
-          {/* Product Display */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Left Column - Product Info */}
-            <div>
+          <div
+            className={`lg:gap-[66px] gap-[33px] flex max-lg:flex-col ${
+              isReverse ? "flex-row-reverse" : ""
+            }`}
+          >
+            <div className="flex flex-col">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-sm text-blue-600 font-medium">Hygiene Film</h2>
-                <button className="flex items-center text-orange-500 hover:text-orange-600 text-sm">
-                  <Download size={16} className="mr-1" />
-                  Download Brochure
+                <Tags
+                  title="Hygiene Film"
+                  className={`${isReverse ? "!bg-white" : ""}`}
+                />
+                <button className="flex items-center text-[#F6821F] hover:text-orange-600 font-[700] text-[16px] leading-[24px]">
+                  <DownloadIcon size={16} className="mr-[10px]" />
+                  <span className="ml-[10px]">Download Brochure</span>
                 </button>
               </div>
-              
-              <h1 className="text-2xl font-bold mb-6">{product?.name}</h1>
-              
+
+              <h3 className="mb-[10px]">{product?.name}</h3>
+
               <div className="mb-6">
-                <h3 className="font-medium mb-2">Features</h3>
-                <ul className="space-y-2">
+                <h3 className="font-[700] text-[16px] leading-[24px]">
+                  Features
+                </h3>
+                <ul className="mt-[16px]">
                   {product?.features.map((feature, index) => (
                     <li key={index} className="flex">
                       <span className="text-blue-500 mr-2">•</span>
-                      <span className='text-[#414750] leading-7'>{feature} <span className='text-blue-500'>Read more...</span></span>
+                      <span className="text-[#414750] leading-7">
+                        {feature}{" "}
+                        <span className="text-[#2B5592]">Read more...</span>
+                      </span>
                     </li>
                   ))}
                 </ul>
               </div>
-              
+
               <div className="mb-6">
-                <h3 className="font-medium mb-2">Specification</h3>
-                <ul className="space-y-2">
+                <h3 className="text-[16px] leading-[24px] mb-2 text-[#252C32]">
+                  Specification
+                </h3>
+                <ul className="mt-[16px]">
                   {product?.specifications.map((spec, index) => (
-                    <li key={index} className="flex text-[#414750]">
-                      <span className="text-blue-500 text-base mr-2">•</span>
-                      <span className='font-bold'>{spec?.title}</span><span> : {spec?.value}</span>
+                    <li
+                      key={index}
+                      className="flex text-[#414750] text-[16px] leading-[24px] mb-[4px]"
+                    >
+                      <span className=" text-base mr-2">•</span>
+                      <span className="font-[600]">{spec?.title}</span>
+                      <span> : {spec?.value}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              
+
               <div className="flex space-x-3">
                 <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded flex items-center">
-                  Get a Quote
+                  <SendIcon />
+                  <span className="ml-[10px]">Get a Quote</span>
                 </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded flex items-center">
-                  Get Sample
+                <button className="bg-[#2B5592] hover:bg-[#2B5592] text-white px-4 py-2 rounded flex items-center">
+                  <RequestSampleIcon />
+                  <span className="ml-[10px]">Request a Sample</span>
                 </button>
               </div>
             </div>
-            
+
             {/* Right Column - Image */}
-            <div className=''>
-             <ImageSlider imageList={product?.thumbnails}/>
-             </div>
-                
+            <div >
+              <ImageSlider imageList={product?.thumbnails} />
+            </div>
           </div>
         </div>
-      );
+      </MainWidthContainer>
+    </div>
+  )
 }
 
 export default ProductComponent

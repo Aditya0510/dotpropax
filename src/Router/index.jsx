@@ -5,6 +5,8 @@ import Facilities from "../Pages/Facilities";
 import Customers from "../Pages/Customers";
 import Partners from "../Pages/Partners";
 import Products from "../Pages/Products";
+import AboutUs from "../Pages/AboutUs";
+import CaseStudies from "../Pages/CaseStudies";
 
 const Router = () => {
   const RoutesArray = [
@@ -12,7 +14,7 @@ const Router = () => {
       path: RoutesLink?.homepage,
       route: <Homepage />
     },
-     {
+    {
       path: RoutesLink?.facilities,
       route: <Facilities />
     },
@@ -22,17 +24,23 @@ const Router = () => {
     },
     {
       path: RoutesLink?.partners,
-      route: <Partners/>
+      route: <Partners />
     },
     {
       path: RoutesLink?.products,
       route: <Products />
+    }, {
+      path: RoutesLink?.aboutUs,
+      route: <AboutUs />
+    }, {
+      path: RoutesLink?.CaseStudies,
+      route: <CaseStudies />
     }
   ]
   return (<BrowserRouter>
     <Routes>
       {RoutesArray?.map((route) => <Route
-        key={route?.path} 
+        key={route?.path}
         path={route.path}
         element={route.route} />
       )}

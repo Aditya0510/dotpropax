@@ -5,6 +5,7 @@ import MainImageSlider from "../../components/Sliders/MainImageSlider";
 import mainSliderImage1 from "../../assets/sliderImages/mainSliderImage1.png";
 import mainSliderImage2 from "../../assets/sliderImages/mainSliderImage2.png";
 import { useEffect, useState } from "react";
+
 const QualityComponent = () => {
   const [currentTab, setCurrentTab] = useState(1);
   const firstSlide = [{

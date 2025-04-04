@@ -11,13 +11,13 @@ const ContactHeader = () => {
   return (
     <div className="py-[12px] bg-[#F3F4F5]">
       <MainWidthContainer className="">
-        <div className="flex justify-between">
+        <div className="flex justify-center sm:justify-between">
           <div className="flex gap-[8px]">
             <Link className="contact-text"><PhoneIcon /> +91 8237 026 111</Link>
             <span className="text-[#8B939F]">|</span>
             <Link className="contact-text"><MailIcon /> anil@dotpropack.com</Link>
           </div>
-          <div className="flex gap-[12px]">
+          <div className="hidden sm:flex gap-[12px] ">
             <Link><FbIcon />
             </Link>
             <Link><InstaIcon />

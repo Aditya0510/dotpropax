@@ -1,11 +1,8 @@
-import PageHeaderImageSlider from "../../components/PageHeaderImageSlider";
 import HeaderSliderComponent from "../../components/Sliders/HeaderSliderComponent";
 import MainLayout from "../../Layouts/MainLayout";
-import { FacilitySlider } from "../../Utilities/dummyFacilityHeaderSlider";
 import mainSliderImage1 from "../../assets/sliderImages/mainSliderImage1.png";
 import mainSliderImage2 from "../../assets/sliderImages/mainSliderImage2.png";
 import InfrastructureComponent from "./Components/InfrastructureComponent";
-import InfrastructureSection from "../../AboutUs/InfrastructureSection";
 import MainWidthContainer from "../../Layouts/MainWidthContainer";
 import TestingEquipmentsSection from "../../AboutUs/TestingEquipmentsSection";
 import InfrastructureDetail from "./Components/InfrastructureDetail";

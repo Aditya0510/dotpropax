@@ -40,7 +40,7 @@ const TestingEquipmentsSection = () => {
 
       <div className="">
         <Tags title="Testing Equipments" />
-        <h2 className="">Testing Equipments</h2>
+        <h2 className="mb-[32px]">Testing Equipments</h2>
         {TestingEquipmentData.map((item, index) => (
           <IconWithTextDescription
             key={index}

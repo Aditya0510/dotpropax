@@ -3,10 +3,8 @@ import HeaderSliderComponent from "../../components/Sliders/HeaderSliderComponen
 import MainLayout from "../../Layouts/MainLayout"
 import mainSliderImage1 from "../../assets/sliderImages/mainSliderImage1.png"
 import mainSliderImage2 from "../../assets/sliderImages/mainSliderImage2.png"
-import CustomerComponent from "../../Homepage/Components/CustomerComponent"
 import ProductComponent from "../../Homepage/Components/ProductComponent"
 import { productSampleData } from "../../Utilities/dummyProductData"
-import MainWidthContainer from "../../Layouts/MainWidthContainer"
 
 const HeaderSliderData = {
   heading: "Products",

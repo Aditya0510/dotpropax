@@ -1,5 +1,5 @@
 import SliderImage from "../assets/Banners/homepageBanner.png";
-import Slider2 from "../assets/ProfileImages/profile1.jfif";
+import Slider2 from "../assets/sliderImages/mainSliderImage1.png";
 export const productSampleData =   {
     id: 1,
     name: "Cast PE Non Breathable Film",

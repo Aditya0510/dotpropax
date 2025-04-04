@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "../Homepage";
 import { RoutesLink } from "../Utilities/RoutesLink";
 import Facilities from "../Pages/Facilities";
+import Customers from "../Pages/Customers";
 
 const Router = () => {
   const RoutesArray = [
@@ -13,6 +14,10 @@ const Router = () => {
       path: RoutesLink?.facilities,
       route: <Facilities />
     },
+    {
+      path: RoutesLink?.customers,
+      route: <Customers />
+    }
   ]
   return (<BrowserRouter>
     <Routes>

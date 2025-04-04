@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, useNavigate } from "react-router-dom";
 import dotProLogo from "../assets/Logo/dotProLogo.png";
 import SearchIcon from "../assets/Icons/SearchIcon";
 import Button from "../components/Button";
@@ -7,6 +7,7 @@ import FeedbackIcon from "../assets/Icons/FeedbackIcon";
 import MainWidthContainer from "../Layouts/MainWidthContainer";
 import { RoutesLink } from "../Utilities/RoutesLink";
 const NavHeader = () => {
+  const navigate = useNavigate(); // Updated line
   const HeaderArray = [{
     text: "About Us",
     link: "",
@@ -25,7 +26,7 @@ const NavHeader = () => {
     number: "03"
   }, {
     text: "Customers",
-    link: "",
+    link: RoutesLink?.customers,
     number: "10+"
   }, {
     text: "Case Study",
@@ -37,7 +38,7 @@ const NavHeader = () => {
 
     <MainWidthContainer>
       <div className="flex justify-between items-center py-[8px]">
-        <img src={dotProLogo} alt="dot pro logo" />
+        <img src={dotProLogo} alt="dot pro logo" onClick={()=> navigate('/')} className="cursor-pointer"/>
         <nav>
           <ul className="flex gap-[24px] list-none ">
             {HeaderArray?.map((header) => <li

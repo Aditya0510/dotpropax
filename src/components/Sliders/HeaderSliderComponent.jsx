@@ -7,7 +7,7 @@ const HeaderSliderComponent = ({
   text,
   buttons = [],
   SliderData = [],
-  descriptionStyle=''
+  descriptionStyle = ''
 }) => {
   return (
     <div className="bg-[#F3F8FF] pb-[42px]">
@@ -21,14 +21,14 @@ const HeaderSliderComponent = ({
           </p>
           <div className="flex justify-center gap-[12px] my-[40px]">
             {buttons?.map((btn) => (
-              <Button varient="quarternary" text={btn?.text} className="!font-[400]"/>
+              <Button varient="quarternary" text={btn?.text} className="!font-[400]" />
             ))}
           </div>
         </div>
       </MainWidthContainer>
 
       <div>
-        <PageHeaderImageSlider imageList={SliderData} descriptionStyle={descriptionStyle}/>
+        <PageHeaderImageSlider imageList={SliderData} descriptionStyle={descriptionStyle} />
       </div>
     </div>
   )

@@ -38,7 +38,7 @@ const Partners = () => {
   return (
 
     <MainLayout>
-      <HeaderSliderComponent {...HeaderSliderData} />
+      <HeaderSliderComponent {...HeaderSliderData} buttonText={"Want to be our partners?"} />
       <CustomerComponent />
     </MainLayout>
 

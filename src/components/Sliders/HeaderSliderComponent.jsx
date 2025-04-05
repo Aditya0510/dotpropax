@@ -1,3 +1,4 @@
+import ArrowIcon from "../../assets/Icons/ArrowIcon"
 import MainWidthContainer from "../../Layouts/MainWidthContainer"
 import Button from "../Button"
 import PageHeaderImageSlider from "../PageHeaderImageSlider"
@@ -6,6 +7,7 @@ const HeaderSliderComponent = ({
   heading,
   text,
   buttons = [],
+  buttonText = "",
   SliderData = [],
   descriptionStyle = ''
 }) => {
@@ -19,14 +21,16 @@ const HeaderSliderComponent = ({
           <p className="text-center  mt-[20px] font-[400] text-[16px] leading-[28px] text-[#414750] max-w-[80%]">
             {text}
           </p>
-          <div className="flex justify-center gap-[12px] my-[40px]">
+          {buttonText && <Button className="mt-[40px]">
+            {buttonText}<ArrowIcon />
+          </Button>}
+          {<div className="flex justify-center gap-[12px] my-[40px]">
             {buttons?.map((btn) => (
               <Button varient="quarternary" text={btn?.text} className="!font-[400]" />
             ))}
-          </div>
+          </div>}
         </div>
       </MainWidthContainer>
-
       <div>
         <PageHeaderImageSlider imageList={SliderData} descriptionStyle={descriptionStyle} />
       </div>

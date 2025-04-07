@@ -4,7 +4,7 @@ import NavHeader from "./NavHeader";
 const MainHeader = () => {
   return (<div className="flex flex-col">
     <ContactHeader />
-    <NavHeader/>
+    <NavHeader />
   </div>)
 }
 export default MainHeader;

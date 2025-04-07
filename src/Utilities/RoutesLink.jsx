@@ -5,5 +5,8 @@ export const RoutesLink = {
   partners: "/partners",
   products: "/products",
   aboutUs: "/about-us",
-  CaseStudies: "/case-studies"
+  CaseStudies: "/case-studies",
+  feedback: "/feedback",
+  quote: "/get-quote",
+  sample: "/get-sample"
 }

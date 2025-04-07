@@ -13,6 +13,7 @@ import AnilKum from "../../assets/ProfileImages/anilkumawat.png"
 import missionBanner from "../../assets/Banners/missionBanner.png"
 import PlayButton from "../../assets/Icons/PlayButton"
 import { Tags } from "../../components/Common"
+import { useRef, useState } from "react"
 const MissionComponent = () => {
   const NavArray = [
     {
@@ -55,6 +56,14 @@ const MissionComponent = () => {
     },
   ]
 
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    videoRef.current.play();
+    setIsPlaying(true);
+  };
+
   return (
     <div className="mt-[320px]">
       <MainWidthContainer>
@@ -64,14 +73,25 @@ const MissionComponent = () => {
         <MainNavbar NavArray={NavArray} activeTab={2} />
         <div className="mt-[136px] grid grid-cols-2 gap-[24px]">
           <div className="relative rounded-[4px]">
-            <img
-              src={missionBanner}
-              alt="mission banner"
-              className="h-full w-full"
+            <video
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              className="h-full w-full object-cover"
+              controls={false} // hide default controls if using a custom play button
+              poster={missionBanner}
+              muted
+              // thumbna
+              loop={false}
+              preload="metadata"
+              ref={videoRef}
             />
-            <div className="absolute bottom-40 right-40">
-              <PlayButton />
+            <div className="absolute bottom-0 translate-x-[+50%] translate-y-[-50%] z-[30]">
+              {!isPlaying && (
+                <button className="" onClick={handlePlay}>
+                  <PlayButton />
+                </button>
+              )}
             </div>
+            {!isPlaying && <div className="absolute bottom-0 w-full h-full bg-[#00000050]"></div>}
           </div>
           <div>
             <Tags title="Why DotpackPro is Best?" className="mb-[16px]" />
@@ -81,7 +101,7 @@ const MissionComponent = () => {
                 Dot Propack Vision and Mission
               </h2>
               <p className="font-[700] text-[18px] leading-[24px] tracking-[0%]">
-                Quality is what we Believe, Service is what we Give.<br/>
+                Quality is what we Believe, Service is what we Give.<br />
                 Opportunity is what you Give, Satisfaction is what you Get
               </p>
               <p className="font-[400] text-[16px] leading-[28px] tracking-[0%] text-[#414750] ">

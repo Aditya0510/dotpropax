@@ -29,7 +29,7 @@ const SalesPerformanceSection = () => {
           <div className="flex gap-[24px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}
-              className="bg-[#FFFFFF] w-[124px] h-[122px] flex flex-col items-center p-[20px] rounded-[4px] gap-[12px]">
+              className="bg-[#FFFFFF] w-[124px]  flex flex-col items-center p-[20px] rounded-[4px] gap-[12px]">
               <h4 className="font-[700] text-[28px] leading-[32px] text-[#2B5592]">{miles?.number}</h4>
               <p className="text-center font-[600] text-[14px] leading-[20px] text-[#565E69]">{miles?.text}</p>
             </div>)}

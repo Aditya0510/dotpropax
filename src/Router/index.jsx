@@ -7,6 +7,9 @@ import Partners from "../Pages/Partners";
 import Products from "../Pages/Products";
 import AboutUs from "../Pages/AboutUs";
 import CaseStudies from "../Pages/CaseStudies";
+import Feedback from "../Pages/Feedback";
+import Quote from "../Pages/Quote";
+import Sample from "../Pages/Sample";
 
 const Router = () => {
   const RoutesArray = [
@@ -35,6 +38,15 @@ const Router = () => {
     }, {
       path: RoutesLink?.CaseStudies,
       route: <CaseStudies />
+    }, {
+      path: RoutesLink?.feedback,
+      route: <Feedback />
+    }, {
+      path: RoutesLink?.quote,
+      route: <Quote />
+    }, {
+      path: RoutesLink?.sample,
+      route: <Sample />
     }
   ]
   return (<BrowserRouter>

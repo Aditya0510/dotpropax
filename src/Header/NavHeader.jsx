@@ -8,8 +8,12 @@ import MainWidthContainer from "../Layouts/MainWidthContainer";
 import { RoutesLink } from "../Utilities/RoutesLink";
 import HamburgerIcon from "../assets/Icons/HamburgerIcon";
 import { useState } from "react";
+import Modal from "../components/Modal";
+import Feedbackform from "../components/Forms/FeedbackForm";
 const NavHeader = () => {
   const navigate = useNavigate(); // Updated line
+  const [openFeedback, setOpenFeedback] = useState(false);
+  const feedbackToggle = () => setOpenFeedback(!openFeedback);
   const [navMenu, setNavMenu] = useState(false);
   const HeaderArray = [{
     text: "About Us",
@@ -66,7 +70,7 @@ const NavHeader = () => {
         <div className="flex gap-[32px] items-center">
           <SearchIcon />
           <div className="flex gap-[12px]">
-            <Button varient="secondary">
+            <Button varient="secondary" onClick={feedbackToggle}>
               <div className="flex items-center gap-[4px]">
                 <FeedbackIcon /> <span className="hidden md:flex">Feedback</span>
               </div>
@@ -119,7 +123,9 @@ const NavHeader = () => {
           ))}
         </ul>
       </div>
-
+      <Modal isOpen={openFeedback} modalToggle={feedbackToggle} >
+        <Feedbackform tagName="Valueble Feedback" title="Share your Valuable Feedback" desc="Your feedback is invaluable to us! It helps us enhance our products, improve quality, and better serve your needs. Share your thoughts and be a part of our journey towards excellence." submitText="Submit" />
+      </Modal>
     </MainWidthContainer>
   )
 }

@@ -54,11 +54,11 @@ const HeroComponent = () => {
       <div className="absolute bottom-0 w-full h-full">
         <MainWidthContainer className="pt-[120px]">
           <div className="grid grid-cols-5 gap-4 w-full">
-            <div className="col-span-3  p-4 flex flex-col gap-[24px] ">
+            <div className="col-span-5 md:col-span-3  p-4 flex flex-col gap-[24px] ">
               <div>
                 <Button varient="secondary">
                   <p className="drop-shadow-[0px_4px_4px_#00000040]">
-                    Hey! Welcome to Dot propack Industries Pvt, Ltd
+                    Hey! Welcome to Dot propack <span className="hidden md:inline">Industries Pvt, Ltd</span>
                   </p>
                 </Button>
               </div>
@@ -89,7 +89,7 @@ const HeroComponent = () => {
               </div>
             </div>
 
-            <div className="col-span-2  p-4 flex justify-end">
+            <div className="hidden md:flex col-span-2  p-4   justify-end">
               <div>
                 <div className="bg-[#FFFFFF26] p-[48px] flex gap-[12px] rounded-[4px]">
                   <div className="flex flex-col gap-[8px]">

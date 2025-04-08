@@ -6,7 +6,7 @@ import TextArea from "../Inputs/TextArea";
 import formBanner from "../../assets/Banners/formBanner.png";
 
 const Feedbackform = ({ tagName = "", title = "", desc = "", submitText = "" }) => {
-  return (<div className="flex flex-col gap-[24px] ">
+  return (<div className="flex flex-col gap-[24px]">
     <div className="flex flex-col justify-center items-center">
       <Tags title={tagName} />
       <h2 className="font-[700] text-[48px] leading-[100%] mt-[12px]">{title}</h2>

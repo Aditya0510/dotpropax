@@ -7,7 +7,7 @@ const Modal = ({ isOpen, modalToggle, children }) => {
       >
         {/* Modal Content */}
         <div
-          className="bg-white py-[12px] px-6 shadow-lg w-full h-[100vh] "
+          className="bg-white py-[12px] px-6 shadow-lg w-full"
           onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
         >
           <div className="py-4">

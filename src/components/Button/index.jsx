@@ -8,7 +8,7 @@ const Button = ({ text = "", varient = "primary", icon = null, children, classNa
   return (
     <button
       onClick={onClick}
-      className={`font-[700] border-none px-[12px] py-[8px] text-[16px] rounded-[4px] ${buttonType[varient]} text-[#ffffff] flex gap-[8px] ${className}`}
+      className={`font-[700] border-none px-[12px] py-[8px] text-[12px] md:text-[16px] rounded-[4px] ${buttonType[varient]} text-[#ffffff] flex gap-[8px] ${className}`}
     >
       {children ? children : <>
         {icon}

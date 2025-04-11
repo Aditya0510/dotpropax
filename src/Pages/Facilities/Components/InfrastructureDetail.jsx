@@ -37,7 +37,7 @@ const InfrastructureDetail = () => {
   ]
   return (<MainWidthContainer className="mt-[140px]">
     <InfrastructureSection infrastructureArray={infrastructure} />
-    <div className="grid grid-cols-3 gap-[24px] mt-[48px]">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] mt-[48px]">
       <div className="flex flex-col  gap-[24px]">
         <img src={facilityImage1} alt="infra image 1" className="h-[267px] w-full " />
         <img src={facilityImage2} alt="infra image 1" className="h-[267px] w-full " />

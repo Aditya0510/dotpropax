@@ -29,7 +29,7 @@ const QualityComponent = () => {
   }, [currentTab])
 
   return (<div className="ms-[10%] mt-[160px] grid grid-cols-2 gap-[70px]">
-    <div>
+    <div className="col-span-2 md:col-span-1">
       <h2 className="font-[700] text-[48px]  tracking-[0%]">
         Ensuring Superior Quality for Every Product, Every Time
       </h2>
@@ -69,7 +69,7 @@ const QualityComponent = () => {
       </div>
 
     </div>
-    <div>
+    <div className="col-span-2 md:col-span-1">
       <MainImageSlider sliderArray={sliderArray} />
     </div>
   </div>)

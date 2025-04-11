@@ -24,7 +24,7 @@ const MissionVisionComponent = () => {
     setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
   };
 
-  return (<div className=" mt-[100px] mb-[50px]">
+  return (<div className="hidden md:block mt-[100px] mb-[50px]">
     <div className="flex flex-col gap-[40px]">
       <MainWidthContainer>
         <div className="grid grid-cols-5">

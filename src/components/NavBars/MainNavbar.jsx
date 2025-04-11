@@ -1,10 +1,10 @@
 const MainNavbar = ({ NavArray }) => {
   return (
-    <div className="flex gap-[24px] justify-between mt-[73px] items-center ">
-      {NavArray?.map((nav, index) => (
+    <div className="flex gap-[24px] justify-between mt-[43px] md:mt-[73px] items-center  overflow-x-auto py-[30px] hide-scrollbar">
+      {NavArray?.map((nav) => (
         <div
           key={nav?.text}
-          className="border-2  flex flex-col flex-1 justify-center items-center rounded-[4px] transition-all duration-300 aspect-[230/136]  hover:bg-[#F3F8FF] hover:border-[#2B5592]  hover:text-[#2B5592]   cursor-pointer  hover:scale-y-110"
+          className="border-2  flex flex-col flex-1 justify-center items-center rounded-[4px] transition-all duration-300  min-w-[240px] aspect-[230/136]  hover:bg-[#F3F8FF] hover:border-[#2B5592]  hover:text-[#2B5592]   cursor-pointer  hover:scale-y-110"
         >
           <span className="text-[#7B8493] hover:text-[#2B5592]">
             {nav?.icon}

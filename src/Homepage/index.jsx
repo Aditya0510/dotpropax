@@ -9,7 +9,7 @@ import QualityComponent from "./Components/QualityComponent";
 
 const Homepage = () => {
   return (
-    <MainLayout>
+    <MainLayout >
       <HeroComponent />
       <MissionComponent />
       <QualityComponent />
@@ -17,7 +17,6 @@ const Homepage = () => {
       <PerformanceProofComponent />
       <FeedbackComponent />
       <EnquiryComponent />
-
     </MainLayout>
   )
 }

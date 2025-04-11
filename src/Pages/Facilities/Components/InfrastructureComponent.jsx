@@ -14,9 +14,12 @@ const InfrastructureComponent = () => {
   };
   return (<div className="mt-[100px]">
     <MainWidthContainer>
-      <div className="flex justify-between gap-[50px]">
-        <h2 className="flex flex-grow-1">Infrastructure/Facilities <br /> @DOT Propack</h2>
-        <div className="flex flex-col gap-[15px] max-w-[50%]">
+      <div className="flex flex-col md:flex-row justify-between gap-[50px]">
+        <h2>
+          Infrastructure/ Facilities
+          <span className="block md:inline">@DOT Propack</span>
+        </h2>
+        <div className="flex flex-col gap-[15px] md:max-w-[50%]">
           <p className="font-[400] text-[16px] leading-[28px] text-[#414750] ">Ancillaries: We have all other ancillaries required for Machine like, Chilling plant, AHU for Positive air pressure, Compressor etc
             Laboratory Set up. : Tensile and Elongation strength tester, COF, Dart Impact, Muffle Furnace, Densitometer, Opacity, MFI, Corona Dyne Testing, Oven, GSM</p>
           <h5 className="font-[700] text-[24px] leading-[32px]">- CEO of Dot Pro Pack</h5>
@@ -35,7 +38,7 @@ const InfrastructureComponent = () => {
           preload="metadata"
           ref={videoRef}
         />
-        <div className="absolute bottom-0 translate-x-[+150%] translate-y-[-30%] z-[30]">
+        <div className="absolute inset-0 m-auto z-[30] w-fit h-fit">
           {!isPlaying && (
             <button className="" onClick={handlePlay}>
               <PlayButton />

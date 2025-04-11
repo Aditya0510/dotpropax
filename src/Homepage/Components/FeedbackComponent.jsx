@@ -2,12 +2,12 @@ import Button from "../../components/Button"
 import MainWidthContainer from "../../Layouts/MainWidthContainer"
 import TestimonialSlider from "../../components/Sliders/TestimonialSlider"
 
-const FeedbackComponent = ({containerClass=''}) => {
+const FeedbackComponent = ({ containerClass = '' }) => {
   return (
     <div className={`mt-[82px] ${containerClass}`}>
       <MainWidthContainer>
         <div className="grid grid-cols-5">
-          <div className="col-span-2 flex flex-col justify-center gap-[24px]">
+          <div className="col-span-5 md:col-span-2 flex flex-col justify-center gap-[24px]">
             <div>
               <Button varient="tertiary" text="Testimonials" />
             </div>
@@ -15,7 +15,7 @@ const FeedbackComponent = ({containerClass=''}) => {
               What Our Customer Says
             </h2>
           </div>
-          <div className="col-span-3 flex gap-[24px]">
+          <div className="col-span-5 md:col-span-3 flex gap-[24px]">
             <TestimonialSlider />
             {/* <div className="flex flex-col justify-center items-center w-[60%] gap-[12px]">
   <img

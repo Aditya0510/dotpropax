@@ -67,15 +67,16 @@ const MissionComponent = () => {
   return (
     <div className="mt-[320px]">
       <MainWidthContainer>
-        <h3 className="text-[#14181F] w-[50%]">
+        <h2 className="text-[#14181F] md:w-[50%]">
           High Quality hygiene films at effective price & On time delivery.
-        </h3>
+        </h2>
         <MainNavbar NavArray={NavArray} activeTab={2} />
-        <div className="mt-[136px] grid grid-cols-2 gap-[24px]">
-          <div className="relative rounded-[4px]">
+        <div className="mt-[60px] md:mt-[136px] grid grid-cols-2 gap-[24px]">
+          <div className="relative rounded-[4px] col-span-2 md:col-span-1 ">
             <video
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-              className="h-full w-full object-cover"
+
+              className="min-w-[321px] min-h-[371px] h-full w-full object-cover"
               controls={false} // hide default controls if using a custom play button
               poster={missionBanner}
               muted
@@ -84,22 +85,22 @@ const MissionComponent = () => {
               preload="metadata"
               ref={videoRef}
             />
-            <div className="absolute bottom-0 translate-x-[+50%] translate-y-[-50%] z-[30]">
+            <div className="absolute inset-0 m-auto z-[30] w-fit h-fit">
               {!isPlaying && (
-                <button className="" onClick={handlePlay}>
-                  <PlayButton />
+                <button onClick={handlePlay}>
+                  <PlayButton className="w-[138px] h-[138px] md:w-[294px] md:h-[296px]" />
                 </button>
               )}
             </div>
             {!isPlaying && <div className="absolute bottom-0 w-full h-full bg-[#00000050]"></div>}
           </div>
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <Tags title="Why DotpackPro is Best?" className="mb-[16px]" />
             <div className="flex flex-col gap-[24px] mt-[12px]">
-              <h2 className="w-[57%] leading-[100%]"
+              <h3 className="md:w-[57%] leading-[100%]"
               >
                 Dot Propack Vision and Mission
-              </h2>
+              </h3>
               <p className="font-[700] text-[18px] leading-[24px] tracking-[0%]">
                 Quality is what we Believe, Service is what we Give.<br />
                 Opportunity is what you Give, Satisfaction is what you Get
@@ -117,10 +118,10 @@ const MissionComponent = () => {
                 </Button>
               </div>
             </div>
-            <div className="flex mt-[32px] gap-[16px] min-h-[217px]">
+            <div className="flex mt-[32px] gap-[16px] min-h-[217px] overflow-auto hide-scrollbar">
               {profiles?.map((prof) => (
                 <div
-                  className="relative w-[33.33%] h-auto cursor-pointer overflow-hidden group rounded-[4px]"
+                  className="relative min-w-[175px] w-[33.33%] h-auto cursor-pointer overflow-hidden group rounded-[4px]"
                   key={prof?.text}
                 >
                   {/* Profile Image */}

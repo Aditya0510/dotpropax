@@ -74,16 +74,16 @@ body{
 }
 
 h1{
-  font-size: 58px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 56px;
   font-weight: 700;
   color: #14181F;
   letter-spacing: -1%;
 }
 
 h2{
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 40px;
+  line-height: 56px;
   font-weight: 700;
   color: #14181F;
   letter-spacing: -1%;
@@ -119,4 +119,70 @@ h6{
   font-weight: 700;
   color: #14181F;
   letter-spacing: -1%;
+}
+
+/* sm (640px) */
+@media (min-width: 768px) {
+  h1 {   font-size: 58px;
+  line-height: 80px; }
+  h2 {   font-size: 48px;
+  line-height: 72px; }
+  h3 {  font-size: 40px;
+  line-height: 56px; }
+  h4 {  font-size: 28px;
+  line-height: 32px; }
+  h5 {    font-size: 24px;
+  line-height: 32px; }
+  h6 {  font-size: 20px;
+  line-height: 24px; }
+}
+
+/* md (768px) */
+/* @media (min-width: 640px) {
+  h1 { font-size: 50px; line-height: 70px; }
+  h2 { font-size: 42px; line-height: 56px; }
+  h3 { font-size: 36px; line-height: 48px; }
+} */
+
+/* lg (1024px) */
+/* @media (min-width: 1024px) {
+  h1 { font-size: 58px; line-height: 80px; }
+  h2 { font-size: 48px; line-height: 72px; }
+  h3 { font-size: 40px; line-height: 56px; }
+  h4 { font-size: 28px; line-height: 32px; }
+  h5 { font-size: 24px; line-height: 32px; }
+  h6 { font-size: 20px; line-height: 24px; }
+} */
+
+/* xl (1280px) */
+/* @media (min-width: 1280px) {
+  h1 { font-size: 64px; line-height: 88px; }
+  h2 { font-size: 52px; line-height: 76px; }
+} */
+
+/* 2xl (1440px) */
+/* @media (min-width: 1440px) {
+  h1 { font-size: 70px; line-height: 96px; }
+} */
+
+/* 3xl (1728px) */
+/* @media (min-width: 1728px) {
+  h1 { font-size: 76px; line-height: 104px; }
+  h2 { font-size: 56px; line-height: 80px; }
+} */
+
+/* 4xl (1920px) */
+/* @media (min-width: 1920px) {
+  h1 { font-size: 84px; line-height: 112px; }
+  h2 { font-size: 60px; line-height: 84px; }
+} */
+
+ .hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
 }

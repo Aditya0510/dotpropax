@@ -3,6 +3,7 @@ import timeline2 from "../../../assets/Banners/timeLine2.png";
 import orangeTick from "../../../assets/Icons/orangeTick.png";
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import mainSliderImage1 from "../../../assets/sliderImages/mainSliderImage1.png";
+import { Tags } from "../../../components/Common";
 const DescriptionComponent = ({ event }) => {
   return (<div className="col-span-2 flex flex-col pr-6">
     <h5 className="text-[24px] font-[700] leading-[32px] text-[#1d1d1f] ">
@@ -80,30 +81,46 @@ const TimeLineSection = () => {
 
   return (
     <MainWidthContainer className="mb-[150px]">
-      <div className="relative px-4 py-16  mx-auto">
+      <div className="flex flex-col justify-center items-center mb-[60px] gap-[12px]">
+        <Tags title="History" />
+        <h2 className="font-[700] text-[48px]">Dot Propack</h2>
+      </div>
+      <div className="relative md:px-4 py-16  mx-auto">
         {/* Vertical Line */}
-        <div className="absolute left-1/2 top-20 h-[85%] w-[4px] bg-[#5239bf] transform -translate-x-1/2 z-0" />
+        <div className="absolute left-4 md:left-1/2 top-20 h-[85%] w-[4px] bg-[#5239bf] transform -translate-x-1/2 z-0" />
         <div className="flex flex-col gap-16 relative z-10">
           {events.map((event, index) => {
             const isEven = index % 2 === 0;
             return (
               <div
                 key={index}
-                className={`grid grid-cols-5  ${isEven ? "" : "flex-row-reverse"
+                className={`flex gap-[12px] flex-wrap md:grid md:grid-cols-5  ${isEven ? "" : "md:flex-row-reverse"
                   }`}
               >
                 {/* Left Content */}
                 {isEven ? (
                   <>
-                    <DescriptionComponent event={event} />
-                    <RoundedTick />
-                    <ImageComponent event={event} />
+                    <div className="order-2 md:order-1 md:col-span-2 w-[80%] md:w-fit">
+                      <DescriptionComponent event={event} />
+                    </div>
+                    <div className=" order-3 md:order-3 md:col-span-2 justify-center ms-[48px] md:ms-0 w-full">
+                      <ImageComponent event={event} />
+                    </div>
+                    <div className=" order-1 md:order-2 md:col-span-1 flex md:justify-center">
+                      <RoundedTick />
+                    </div>
                   </>
                 ) : (
                   <>
-                    <ImageComponent event={event} />
-                    <RoundedTick />
-                    <DescriptionComponent event={event} />
+                    <div className="order-2 w-[70%] md:w-fit md:col-span-2 md:order-3">
+                      <DescriptionComponent event={event} />
+                    </div>
+                    <div className="order-3 ms-[48px] md:ms-0 w-full md:col-span-2 md:order-1">
+                      <ImageComponent event={event} />
+                    </div>
+                    <div className="md:col-span-1 order-1 md:order-2 flex  md:justify-center">
+                      <RoundedTick />
+                    </div>
                   </>
                 )}
               </div>

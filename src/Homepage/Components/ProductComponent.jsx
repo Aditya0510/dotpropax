@@ -14,19 +14,17 @@ const ProductComponent = ({
 }) => {
   return (
     <div
-      className={`min-h-[100dvh] ${
-        isReverse ? "bg-[#F3F8FF]" : "bg-white"
-      } flex justify-center items-center py-[32px]`}
+      className={`min-h-[100dvh] ${isReverse ? "bg-[#F3F8FF]" : "bg-white"
+        } flex justify-center items-center py-[32px]`}
     >
       <MainWidthContainer>
         <div className=" p-4">
           <div
-            className={`lg:gap-[66px] gap-[33px] flex max-lg:flex-col ${
-              isReverse ? "flex-row-reverse" : ""
-            }`}
+            className={`lg:gap-[66px] gap-[33px] flex max-lg:flex-col ${isReverse ? "flex-row-reverse" : ""
+              }`}
           >
-            <div className="flex flex-col">
-              <div className="flex items-center justify-between mb-4">
+            <div className="order-2 md:order-1 flex flex-col">
+              <div className="flex flex-wrap items-center justify-between mb-4 gap-[32px]">
                 <Tags
                   title="Hygiene Film"
                   className={`${isReverse ? "!bg-white" : ""}`}
@@ -74,20 +72,20 @@ const ProductComponent = ({
                 </ul>
               </div>
 
-              <div className="flex space-x-3">
+              <div className="flex flex-wrap gap-[32px] md:space-x-3">
                 <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded flex items-center">
                   <SendIcon />
                   <span className="ml-[10px]">Get a Quote</span>
                 </button>
-                <button className="bg-[#2B5592] hover:bg-[#2B5592] text-white px-4 py-2 rounded flex items-center">
+                <button className="bg-[#2B5592] hover:bg-[#2B5592] text-white px-4 py-2 rounded flex items-center gap-[14px]">
                   <RequestSampleIcon />
-                  <span className="ml-[10px]">Request a Sample</span>
+                  <span className="inline md:hidden">Get Sample</span>
+                  <span className="hidden md:inline md:ml-[10px]">Request a Sample</span>
                 </button>
               </div>
             </div>
-
             {/* Right Column - Image */}
-            <div >
+            <div className="order-1 md:order-2">
               <ImageSlider imageList={product?.thumbnails} />
             </div>
           </div>

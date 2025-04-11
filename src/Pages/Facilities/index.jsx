@@ -27,7 +27,7 @@ const Facilities = () => {
 
   }
   return (<MainLayout>
-    <HeaderSliderComponent {...HeaderSliderData} descriptionStyle="font-[700] text-[24px] leading-[32px]"/>
+    <HeaderSliderComponent {...HeaderSliderData} descriptionStyle="font-[700] text-[24px] leading-[32px]" />
     <InfrastructureComponent />
     <InfrastructureDetail />
     <MainWidthContainer className="my-[140px] ">

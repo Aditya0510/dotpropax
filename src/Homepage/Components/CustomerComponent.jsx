@@ -31,12 +31,12 @@ const CustomerComponent = () => {
   return (<div className="mt-[180px] mb-[60px]">
     <MainWidthContainer>
       <h2 className="font-[700] text-[48px] text-center">Trusted by beloved customer</h2>
-      <div className="flex flex-row justify-between items-center mt-[48px] w-full">
+      <div className="flex flex-row justify-between items-center mt-[48px] w-full overflow-auto hide-scrollbar">
         {customerList?.map((cust, index) =>
           <div className={``}>
             <img
               key={index}
-              className={`${cust?.className} h-[70px] w-full object-contain mix-blend-luminosity  grayscale`}
+              className={`${cust?.className} h-[70px] w-full min-w-[120px] object-contain mix-blend-luminosity  grayscale`}
               src={cust?.image} />
           </div>
         )}

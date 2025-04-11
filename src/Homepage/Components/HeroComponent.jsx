@@ -48,7 +48,7 @@ const HeroComponent = () => {
       <img
         src={homepageBanner}
         alt="home banner"
-        className=" inset-0 w-full h-[948px]"
+        className=" inset-0 w-full h-[1200px] xl:h-[948px]"
       />
       <div className="absolute w-full h-full opacity-[1] bg-[#353836a1] bottom-0"></div>
       <div className="absolute bottom-0 w-full h-full">
@@ -64,12 +64,12 @@ const HeroComponent = () => {
               </div>
 
               <div className="relative">
-                <h2 className="font-sans font-bold text-[48px] leading-[140%] tracking-[0%] text-white drop-shadow-[0px_4px_4px_rgba(0,0,0,1)]">
+                <h2 className="font-sans font-bold text-[40px] md:text-[48px]  leading-[56px] md:leading-[140%] tracking-[0%] text-white drop-shadow-[0px_4px_4px_rgba(0,0,0,1)]">
                   Delivering World-Class Plastic Packaging and Speciality Films
                   for Hygiene and Health Care
                 </h2>
                 <div className="flex ms-[10%]">
-                  <div className=" w-[52%] h-[6px] bg-white"></div>
+                  <div className="hidden lg:inline w-[52%] h-[6px] bg-white"></div>
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ const HeroComponent = () => {
               </div>
               <div>
                 <img src={tuvImage} alt="tuv image" />
-                <p className="text-white">ISO 900:2015 Certified Company</p>
+                <p className="text-white font-[400] text-[16px] leading-[28px]">ISO 900:2015 Certified Company</p>
               </div>
             </div>
 
@@ -127,12 +127,19 @@ const HeroComponent = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[0px] w-[80dvw]  translate-y-[+50%] flex flex-row gap-2">
-            {ProductArray?.map((prod) => (
-              <div className="rounded-[4px] flex flex-1 p-[4px] bg-white">
-                <img src={prod?.image} className="w-full aspect-square object-cover" />
-              </div>
-            ))}
+          <div className="absolute bottom-[0px] w-[95%] md:w-[80dvw]  translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2">
+            <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar">
+              {ProductArray?.map((prod) => (
+                <div
+                  className="rounded-[4px] bg-white p-[4px] shrink-0 min-w-[200px]"
+                  // className="rounded-[4px] flex flex-1 p-[4px] bg-white"
+                  key={prod.image}
+                >
+                  <img src={prod?.image} className="w-full min-w-[200px] md:aspect-square object-cover" />
+                </div>
+              ))}
+            </div>
+
           </div>
         </MainWidthContainer>
       </div>

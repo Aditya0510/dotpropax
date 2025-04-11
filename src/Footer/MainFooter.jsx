@@ -27,8 +27,8 @@ const MainFooter = () => {
     <div className="bg-[#14181F]">
       <div className="mt-[82px]">
         <MainWidthContainer>
-          <div className="grid grid-cols-3 gap-[150px]">
-            <div className="col-span-1 flex flex-col">
+          <div className="grid grid-cols-3 gap-[40px] md:gap-[150px]">
+            <div className="col-span-3 md:col-span-1 flex flex-col">
               <div className="rounded-[4px] w-[100%]">
                 <img src={logo} alt="logo" className="w-[50%] aspect-[3/2] object-contain" />
               </div>
@@ -38,8 +38,9 @@ const MainFooter = () => {
                 setting
               </p>
             </div>
-            <div className="col-span-2 flex justify-between">
-              <div>
+            <div className="col-span-3 
+            md:col-span-2 gap-[12px]  grid justify-between grid-col-3 sm:grid-cols-6">
+              <div className="col-span-3 lg:col-span-2">
                 <h6 className="font-[700] text-[20px] leading-[24px] text-white">
                   Products
                 </h6>
@@ -49,7 +50,7 @@ const MainFooter = () => {
                   </p>
                 ))}
               </div>
-              <div>
+              <div className="col-span-3 lg:col-span-2">
                 <h6 className="font-[700] text-[20px] leading-[24px] text-white">
                   Legal
                 </h6>
@@ -59,7 +60,7 @@ const MainFooter = () => {
                   </p>
                 ))}
               </div>
-              <div>
+              <div className="col-span-3 lg:col-span-2">
                 <h6 className="font-[700] text-[20px] leading-[24px] text-white">
                   Contact
                 </h6>

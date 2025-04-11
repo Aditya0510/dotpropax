@@ -32,15 +32,17 @@ const infrastructure = [
 
 const InfrastructureSection = ({ infrastructureArray = infrastructure }) => {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "32px" }}>
+    <div
+      className="grid grid-cols-3 gap-[24px] lg:gap-[32px]"
+    >
       {/* First column */}
-      <div>
+      <div className="col-span-3 md:col-span-2 ">
         <Tags title="Facilities" />
         <h2>Infrastructure and Facilities</h2>
       </div>
       {/* Second column */}
-      <div>
-        <div className="grid grid-cols-2 gap-[32px]">
+      <div className="col-span-3 md:col-span-4 lg:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
           {infrastructureArray.map((item, index) => (
             <IconWithTextDescription
               key={index}

@@ -17,8 +17,8 @@ const SalesPerformanceSection = () => {
   }]
   return (<div className="bg-[#F3F8FF]">
     <MainWidthContainer>
-      <div className="grid grid-cols-5 py-[100px]">
-        <div className="col-span-3 flex flex-col gap-[24px]">
+      <div className="grid grid-cols-5 py-[100px] gap-[32px]">
+        <div className="col-span-5 md:col-span-3 flex flex-col gap-[24px]">
           <div>
             <button className="bg-white text-[#2B5592] font-[700] text-[14px]
           leading-[22.4px] py-[8px] px-[16px]">Milestones</button>
@@ -26,7 +26,7 @@ const SalesPerformanceSection = () => {
 
           <h2 className="font-[700] text-[48px] leading-[100%] w-[88%]">Sales Performance</h2>
           <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
-          <div className="flex gap-[24px]">
+          <div className="flex flex-wrap gap-[24px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}
               className="bg-[#FFFFFF] w-[124px]  flex flex-col items-center p-[20px] rounded-[4px] gap-[12px]">
@@ -35,11 +35,11 @@ const SalesPerformanceSection = () => {
             </div>)}
           </div>
         </div>
-        <div className="col-span-2 relative">
+        <div className="col-span-5 md:col-span-2 relative">
           <img
             src={statImage}
             alt="stat image"
-            className="w-full h-[400px] rounded-[4px]"
+            className="w-full h-full min-h-[400px] rounded-[4px]"
           />
         </div>
       </div>

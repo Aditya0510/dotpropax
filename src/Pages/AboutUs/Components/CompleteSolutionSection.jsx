@@ -12,7 +12,7 @@ const CompleteSolutionSection = () => {
   ]
   return (<div className="mt-[100px] mb-[50px]">
     <MainWidthContainer>
-      <div className="grid grid-cols-2 gap-[32px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
         <div className="flex flex-col gap-[24px]">
           <div>
             <Tags title="Why Choose DotpackPro?" />
@@ -34,7 +34,7 @@ const CompleteSolutionSection = () => {
             <img src={bannerImage} className="w-full h-[602px] rounded-[4px]" alt="banner" />
             <div
               style={{ boxShadow: "-100px 100px 150px #3440541F" }}
-              className="absolute bottom-[0px] translate-x-[+6%] w-[36dvw]  translate-y-[+60%] bg-[rgb(255,255,255)] p-[24px] rounded-[4px] flex flex-col gap-[40px]">
+              className="absolute bottom-[0px] translate-x-[+6%] w-[90%] md:w-[36dvw]  translate-y-[+60%] bg-[rgb(255,255,255)] p-[24px] rounded-[4px] flex flex-col gap-[40px]">
               <h5 className=" font-[700] text-[24px] leading-[32px]">Become a complete solution provider for hygiene industry</h5>
               <p className="text-[#565E69] font-[400] text-[16px] leading-[28px]">Dot Propack aims to create long lasting values for its Employees, Share-holders, Business partners, Customers and the Society by Excellence, Competitiveness and Sustainability.</p>
             </div>

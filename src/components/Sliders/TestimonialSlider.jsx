@@ -35,10 +35,10 @@ const TestimonialSlider = () => {
 
   return (
     <div className="relative w-full">
-      <div className="col-span-3 flex gap-[24px]">
+      <div className="flex-col flex md:flex-row gap-[24px]">
         {/* Left Image */}
-        <div className="flex flex-col justify-center items-center w-[60%] gap-[12px]">
-          <img src={testimonials[currentIndex].image} className="h-[364px] w-[364px] object-cover" />
+        <div className="flex flex-col justify-center items-center md:w-[60%] gap-[12px]">
+          <img src={testimonials[currentIndex].image} className="h-[364px] w-full md:w-[364px] object-cover" />
 
           {/* Dots Indicator */}
           <div className="flex gap-[4px] justify-end items-center">
@@ -52,7 +52,7 @@ const TestimonialSlider = () => {
         </div>
 
         {/* Right Text */}
-        <div className="flex flex-col gap-[24px] w-[40%]">
+        <div className="flex flex-col gap-[24px] md:w-[40%]">
           <QuoteIcon />
           <p className="font-[700] text-[14px] leading-[20px]">{testimonials[currentIndex].quote}</p>
           <p className="font-[400] text-[16px] leading-[28px] text-[#414750]">{testimonials[currentIndex].description}</p>

@@ -26,10 +26,10 @@ const PerformanceProofComponent = () => {
 
           <h2 className="font-[700] text-[48px] leading-[100%] w-[88%]">Proof in Performance – Discover Our Achievements</h2>
           <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-[24px]">
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-[24px] md:mr-[20px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}
-              className="bg-[#FFFFFF] w-[124px] h-[122px] flex flex-col items-center p-[20px] rounded-[4px] gap-[12px]">
+              className="bg-[#FFFFFF] flex flex-col w-full items-center p-[20px] rounded-[4px] gap-[12px]">
               <h4 className="font-[700] text-[28px] leading-[32px] text-[#2B5592]">{miles?.number}</h4>
               <p className="text-center font-[600] text-[14px] leading-[20px] text-[#565E69]">{miles?.text}</p>
             </div>)}

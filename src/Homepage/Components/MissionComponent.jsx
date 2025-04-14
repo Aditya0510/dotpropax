@@ -65,7 +65,7 @@ const MissionComponent = () => {
   };
 
   return (
-    <div className="mt-[320px]">
+    <div className="mt-[170px] md:mt-[320px]">
       <MainWidthContainer>
         <h2 className="text-[#14181F] md:w-[50%]">
           High Quality hygiene films at effective price & On time delivery.

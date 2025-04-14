@@ -127,20 +127,19 @@ const HeroComponent = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[0px] w-[95%] md:w-[80dvw]  translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2">
+          <MainWidthContainer className="absolute bottom-[0px] translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2">
             <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar">
               {ProductArray?.map((prod) => (
                 <div
-                  className="rounded-[4px] bg-white p-[4px] shrink-0 min-w-[200px]"
-                  // className="rounded-[4px] flex flex-1 p-[4px] bg-white"
+                  className="rounded-[4px] bg-white p-[4px] flex grow-[1] min-w-[200px] aspect-square"
                   key={prod.image}
                 >
-                  <img src={prod?.image} className="w-full min-w-[200px] md:aspect-square object-cover" />
+                  <img src={prod?.image} className="w-full   object-cover" />
                 </div>
               ))}
             </div>
+            </MainWidthContainer>
 
-          </div>
         </MainWidthContainer>
       </div>
     </div>

@@ -4,7 +4,7 @@ const MainNavbar = ({ NavArray }) => {
       {NavArray?.map((nav) => (
         <div
           key={nav?.text}
-          className="border-2  flex flex-col flex-1 justify-center items-center rounded-[4px] transition-all duration-300  min-w-[240px] aspect-[230/136]  hover:bg-[#F3F8FF] hover:border-[#2B5592]  hover:text-[#2B5592]   cursor-pointer  hover:scale-y-110"
+          className="border-2  flex flex-col flex-1 justify-center items-center rounded-[4px] transition-all duration-300  min-w-[180px] aspect-[150/100] lg:aspect-[230/150]  hover:bg-[#F3F8FF] hover:border-[#2B5592]  hover:text-[#2B5592]   cursor-pointer  hover:scale-y-110"
         >
           <span className="text-[#7B8493] hover:text-[#2B5592]">
             {nav?.icon}

@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
       <div className="flex-col flex md:flex-row gap-[24px]">
         {/* Left Image */}
         <div className="flex flex-col justify-center items-center md:w-[60%] gap-[12px]">
-          <img src={testimonials[currentIndex].image} className="h-[364px] w-full md:w-[364px] object-cover" />
+          <img src={testimonials[currentIndex].image} className="h-[364px] w-full md:w-[364px] object-cover rounded-[4px]" />
 
           {/* Dots Indicator */}
           <div className="flex gap-[4px] justify-end items-center">

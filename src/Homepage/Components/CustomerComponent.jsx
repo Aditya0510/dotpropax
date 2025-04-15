@@ -36,7 +36,8 @@ const CustomerComponent = () => {
           <div className={``}>
             <img
               key={index}
-              className={`${cust?.className} h-[70px] w-full min-w-[120px] object-contain mix-blend-luminosity  grayscale`}
+              className={`${cust?.className} h-[70px] w-full min-w-[300px]
+              lg:min-w-[150px] object-contain mix-blend-luminosity  grayscale hover:grayscale-0 hover:mix-blend-normal`}
               src={cust?.image} />
           </div>
         )}

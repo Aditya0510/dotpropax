@@ -11,7 +11,7 @@ const FeedbackComponent = ({ containerClass = '' }) => {
             <div>
               <Button varient="tertiary" text="Testimonials" />
             </div>
-            <h2 className="font-[700] text-[48px] leading-[100%]">
+            <h2 className="font-[700] text-[48px] leading-[100%] mb-[24px] md:mb-0">
               What Our Customer Says
             </h2>
           </div>

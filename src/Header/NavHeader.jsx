@@ -10,6 +10,7 @@ import HamburgerIcon from "../assets/Icons/HamburgerIcon";
 import { useState } from "react";
 import Modal from "../components/Modal";
 import Feedbackform from "../components/Forms/FeedbackForm";
+import CloseIcon from "../assets/Icons/CloseIcon";
 const NavHeader = () => {
   const navigate = useNavigate(); // Updated line
   const [openFeedback, setOpenFeedback] = useState(false);
@@ -100,7 +101,7 @@ const NavHeader = () => {
       >
         <div className="flex justify-end items-center mb-6">
           <button onClick={() => setNavMenu(false)}>
-            x
+            <CloseIcon />
           </button>
         </div>
 
@@ -124,7 +125,9 @@ const NavHeader = () => {
         </ul>
       </div>
       <Modal isOpen={openFeedback} modalToggle={feedbackToggle} >
-        <Feedbackform tagName="Valueble Feedback" title="Share your Valuable Feedback" desc="Your feedback is invaluable to us! It helps us enhance our products, improve quality, and better serve your needs. Share your thoughts and be a part of our journey towards excellence." submitText="Submit" />
+        <Feedbackform tagName="Valueble Feedback" title="Share your Valuable Feedback" desc="Your feedback is invaluable to us! It helps us enhance our products, improve quality, and better serve your needs. Share your thoughts and be a part of our journey towards excellence." submitText="Submit"
+          modalToggle={feedbackToggle}
+        />
       </Modal>
     </MainWidthContainer>
   )

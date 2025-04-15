@@ -6,12 +6,21 @@ import { Tags } from "../../components/Common"
 import DownloadIcon from "../../assets/Icons/DownloadIcon"
 import SendIcon from "../../assets/Icons/sendIcon"
 import RequestSampleIcon from "../../assets/Icons/RequestSampleIcon"
+import Modal from "../../components/Modal"
+import Feedbackform from "../../components/Forms/FeedbackForm"
 
 
 const ProductComponent = ({
   product = productSampleData,
   isReverse = false,
 }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modaltype, setModalType] = useState("");
+  const modalToggle = () => setModalOpen(!modalOpen);
+  const openModalhandler = (type) => {
+    modalToggle();
+    setModalType(type);
+  }
   return (
     <div
       className={`min-h-[100dvh] ${isReverse ? "bg-[#F3F8FF]" : "bg-white"
@@ -73,13 +82,19 @@ const ProductComponent = ({
               </div>
 
               <div className="flex flex-wrap gap-[32px] md:space-x-3">
-                <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded flex items-center">
+                <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded flex items-center"
+                  onClick={() => openModalhandler("quote")}
+                >
                   <SendIcon />
                   <span className="ml-[10px]">Get a Quote</span>
                 </button>
-                <button className="bg-[#2B5592] hover:bg-[#2B5592] text-white px-4 py-2 rounded flex items-center gap-[14px]">
+                <button
+                  onClick={() => openModalhandler("sample")}
+                  className="bg-[#2B5592] hover:bg-[#2B5592] text-white px-4 py-2 rounded flex items-center gap-[14px]">
                   <RequestSampleIcon />
-                  <span className="inline md:hidden">Get Sample</span>
+                  <span className="inline md:hidden"
+
+                  >Get Sample</span>
                   <span className="hidden md:inline md:ml-[10px]">Request a Sample</span>
                 </button>
               </div>
@@ -91,6 +106,12 @@ const ProductComponent = ({
           </div>
         </div>
       </MainWidthContainer>
+      <Modal isOpen={modalOpen} modalToggle={modalToggle} >
+        <Feedbackform tagName={modaltype == "sample" ? "Request Product Sample" : "Quotation about product"} title={modaltype == "sample" ? "Request a Sample" : "Get a Quote"} desc="Your feedback is invaluable to us! It helps us enhance our products, improve quality, and better serve your needs. Share your thoughts and be a part of our journey towards excellence." submitText="Submit"
+          modalToggle={modalToggle}
+        />
+      </Modal>
+
     </div>
   )
 }

@@ -28,18 +28,28 @@ const HeroComponent = () => {
   const ProductArray = [
     {
       image: rollPaper,
+      title: "Cast PE non-breathable film",
+      desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: colorRollPaper,
+      title: "Cast PE non-breathable film",
+      desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: designRollPaper,
+      title: "Cast PE non-breathable film",
+      desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: printedRollPaper,
+      title: "Cast PE non-breathable film",
+      desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: printedRollPaper,
+      title: "Cast PE non-breathable film",
+      desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
   ]
 
@@ -127,18 +137,32 @@ const HeroComponent = () => {
               </div>
             </div>
           </div>
-          <MainWidthContainer className="absolute bottom-[0px] translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2">
-            <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar">
+          <MainWidthContainer className="absolute bottom-[0px] translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2 ">
+            <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar py-[40px]">
               {ProductArray?.map((prod) => (
                 <div
-                  className="rounded-[4px] bg-white p-[4px] flex grow-[1] min-w-[200px] aspect-square"
+                  className="  p-[4px] flex grow-[1]
+                  hover:grow-0
+                  min-w-[200px] aspect-square transform transition-all duration-500 ease-in-out  hover:scale-x-[2.0]
+                  hover:scale-y-110 hover:mx-[100px] 
+                   hover:z-40 rounded-[4px] bg-white relative"
                   key={prod.image}
                 >
-                  <img src={prod?.image} className="w-full   object-cover" />
+                  <img src={prod?.image} className="w-full   object-cover " />
+                  <div className="hidden hover:visible absolute inset-0 bg-gradient-to-b from-transparent to-[#000000] opacity-45"></div>
+                  <div className="transform transition-all duration-500 ease-in-out text-white absolute bottom-0">
+                    <div>
+                      <h6 className="text-white">{prod.title}</h6>
+                      <p>{prod.desc}</p>
+                      <Button>
+                        Get More Details <ArrowIcon />
+                      </Button>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
-            </MainWidthContainer>
+          </MainWidthContainer>
 
         </MainWidthContainer>
       </div>

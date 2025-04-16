@@ -28,8 +28,8 @@ const QualityComponent = () => {
     }
   }, [currentTab])
 
-  return (<div className="ms-[10%] mt-[160px] grid grid-cols-2 gap-[70px]">
-    <div className="col-span-2 md:col-span-1">
+  return (<div className="ms-[7.4%] 3xl:ms-[17%] mt-[160px] grid grid-cols-2 gap-[70px]">
+    <div className="col-span-2 lg:col-span-1 me-[24px]">
       <h2 className="font-[700] text-[48px]  tracking-[0%]">
         Ensuring Superior Quality for Every Product, Every Time
       </h2>
@@ -41,7 +41,7 @@ const QualityComponent = () => {
       <div className="mt-[83px] flex flex-col gap-[32px]">
         <div
           onClick={() => setCurrentTab(1)}
-          className={`cursor-pointer flex gap-[24px] w-[90%] p-[24px] ${currentTab == 1 && 'bg-[#F3F8FF]  rounded-[4px]'}`}
+          className={`cursor-pointer flex flex-col md:flex-row gap-[24px] w-[90%] p-[24px] ${currentTab == 1 && 'bg-[#F3F8FF]  rounded-[4px]'}`}
         >
           <div>
             <div className="h-[60px] w-[60px] bg-[#F9F9FB] rounded-full flex items-center justify-center" >
@@ -49,13 +49,13 @@ const QualityComponent = () => {
             </div>
           </div>
           <div>
-            <h5 className="font-[700] text-[16px] leading-[28px]">Infrastructure/Facilities @ DOT Propack</h5>
+            <h5 className="font-[700] text-[16px] leading-[28px]">Infrastructure/ Facilities @ DOT Propack</h5>
             <p className="font-[400] text-[16px] leading-[28px] text-[#414750]">We have all other ancillaries required for Machine like, Chilling plant, AHU for Positive air pressure, Compressor etc</p>
           </div>
         </div>
         <div
           onClick={() => setCurrentTab(2)}
-          className={`cursor-pointer flex gap-[24px] w-[90%] p-[24px] ${currentTab == 2 && 'bg-[#F3F8FF]  rounded-[4px] '}`}>
+          className={`cursor-pointer flex flex-col md:flex-row gap-[24px] w-[90%] p-[24px] ${currentTab == 2 && 'bg-[#F3F8FF]  rounded-[4px] '}`}>
           <div>
             <div className="h-[60px] w-[60px] bg-[#F9F9FB] rounded-full flex items-center justify-center" >
               <CloudAiIcon />
@@ -69,7 +69,7 @@ const QualityComponent = () => {
       </div>
 
     </div>
-    <div className="col-span-2 md:col-span-1">
+    <div className="col-span-2 lg:col-span-1">
       <MainImageSlider sliderArray={sliderArray} />
     </div>
   </div>)

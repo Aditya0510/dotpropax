@@ -141,29 +141,33 @@ const HeroComponent = () => {
             <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar py-[40px]">
               {ProductArray?.map((prod) => (
                 <div
-                  className="  p-[4px] flex grow-[1]
-                  hover:grow-0
-                  min-w-[200px] aspect-square transform transition-all duration-500 ease-in-out  hover:scale-x-[2.0]
-                  hover:scale-y-110 hover:mx-[100px] 
-                   hover:z-40 rounded-[4px] bg-white relative"
                   key={prod.image}
+                  className="group relative min-w-[200px] aspect-square transition-all duration-500  hover:mx-[120px]"
                 >
-                  <img src={prod?.image} className="w-full   object-cover " />
-                  <div className="hidden hover:visible absolute inset-0 bg-gradient-to-b from-transparent to-[#000000] opacity-45"></div>
-                  <div className="transform transition-all duration-500 ease-in-out text-white absolute bottom-0">
-                    <div>
-                      <h6 className="text-white">{prod.title}</h6>
-                      <p>{prod.desc}</p>
-                      <Button>
-                        Get More Details <ArrowIcon />
-                      </Button>
-                    </div>
+                  {/* Scaling Image Container */}
+                  <div
+                    className="transform transition-all duration-500 ease-in-out group-hover:scale-x-[2.0] group-hover:scale-y-110
+                 bg-white p-[4px] rounded-[4px] group-hover:z-40"
+                  >
+                    <img src={prod?.image} className="w-full h-full object-cover rounded-[4px]" />
+
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000] opacity-45 hidden group-hover:block pointer-events-none"></div>
+                  </div>
+
+                  {/* Text Block (not inside the scaled container) */}
+                  <div className="absolute bottom-0 -left-10 w-full p-4 z-50 hidden group-hover:block transform transition-all duration-500 ">
+                    <h6 className="text-white text-lg">{prod.title}</h6>
+                    <p className="text-white my-2 text-sm">{prod.desc}</p>
+                    <Button>
+                      Get More Details <ArrowIcon />
+                    </Button>
                   </div>
                 </div>
               ))}
+
             </div>
           </MainWidthContainer>
-
         </MainWidthContainer>
       </div>
     </div>

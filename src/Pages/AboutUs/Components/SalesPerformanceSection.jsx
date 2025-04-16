@@ -17,7 +17,7 @@ const SalesPerformanceSection = () => {
   }]
   return (<div className="bg-[#F3F8FF]">
     <MainWidthContainer>
-      <div className="grid grid-cols-5 py-[100px] gap-[32px]">
+      <div className="grid grid-cols-5 py-[100px] gap-[32px] 2xl:gap-[177px]">
         <div className="col-span-5 md:col-span-3 flex flex-col gap-[24px]">
           <div>
             <button className="bg-white text-[#2B5592] font-[700] text-[14px]
@@ -39,7 +39,7 @@ const SalesPerformanceSection = () => {
           <img
             src={statImage}
             alt="stat image"
-            className="w-full h-full min-h-[400px] rounded-[4px]"
+            className="w-full aspect-[6/5]  rounded-[4px]"
           />
         </div>
       </div>

@@ -10,7 +10,7 @@ const EnquiryComponent = () => {
       />
       <div className="absolute w-full h-full bottom-0 bg-[#00000000] bg-gradient-to-b from-[#00000000] to-[#000000]"></div>
     </div>
-    <div className="col-span-2 md:col-span-1 px-[40px] md:px-[100px] py-[40px] bg-[#F3F8FF]">
+    <div className="col-span-2 md:col-span-1 px-[20px] md:px-[100px] py-[40px] bg-[#F3F8FF]">
       <EnquiryForm />
     </div>
   </div>)

@@ -1,7 +1,7 @@
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import statImage from "../../../assets/Banners/statImage.png";
 
-const SalesPerformanceSection = () => {
+const SalesPerformanceSection = ({ refData }) => {
   const mileArray = [{
     number: "1M+",
     text: "Revenue per year"
@@ -17,7 +17,9 @@ const SalesPerformanceSection = () => {
   }]
   return (<div className="bg-[#F3F8FF]">
     <MainWidthContainer>
-      <div className="grid grid-cols-5 py-[100px] gap-[32px] 2xl:gap-[177px]">
+      <div
+        ref={refData?.current["Sales Performance"] ?? null}
+        className="grid grid-cols-5 py-[100px] gap-[32px] 2xl:gap-[177px]">
         <div className="col-span-5 md:col-span-3 flex flex-col gap-[24px]">
           <div>
             <button className="bg-white text-[#2B5592] font-[700] text-[14px]

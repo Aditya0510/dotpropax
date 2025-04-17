@@ -1,7 +1,7 @@
 import MainWidthContainer from "../../Layouts/MainWidthContainer";
 import proofImage from "../../assets/Banners/proofImage.png";
 import proofImage2 from "../../assets/Banners/proofImage2.png";
-const PerformanceProofComponent = () => {
+const PerformanceProofComponent = ({ refData }) => {
   const mileArray = [{
     number: "08+",
     text: "Years of Experience"
@@ -17,7 +17,9 @@ const PerformanceProofComponent = () => {
   }]
   return (<div className="bg-[#F3F8FF]">
     <MainWidthContainer>
-      <div className="grid grid-cols-5 py-[100px] gap-[24px]">
+      <div
+        ref={refData?.current["Trust"] ?? null}
+        className="grid grid-cols-5 py-[100px] gap-[24px]">
         <div className="col-span-5 md:col-span-3 flex flex-col gap-[24px]">
           <div>
             <button className="bg-white text-[#2B5592] font-[700] text-[14px]
@@ -25,7 +27,7 @@ const PerformanceProofComponent = () => {
           </div>
 
           <h2 className="font-[700] text-[48px] leading-[100%] w-[88%]">Proof in Performance – Discover Our Achievements</h2>
-          <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
+          <p className="font-[400] text-[16px] leading-[28px] md:w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-[24px] md:mr-[20px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}

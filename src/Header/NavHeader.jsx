@@ -99,7 +99,7 @@ const NavHeader = () => {
         className={`fixed top-0 left-0 h-full w-full  bg-white z-50  shadow-lg transform transition-transform duration-300 ${navMenu ? "translate-x-0" : "-translate-x-full"
           }`}
       >
-        <div className="flex justify-end items-center mb-6">
+        <div className="flex justify-end items-center mb-6 me-[12px] mt-[12px]">
           <button onClick={() => setNavMenu(false)}>
             <CloseIcon />
           </button>

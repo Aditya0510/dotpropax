@@ -29,12 +29,15 @@ const profileArray = [
     desc: "Ajay Sikchi is the co- founder and Director of DOT Propack Industries Pvt Ltd.Anil already has a unit named Som AutoTech Pvt.Ltd.which deals in Aluminium diecasting, with this experience he is shaping up the organization as future centre of excellence in automotive components.His area of responsibility included commercial functions and finance."
   }
 ]
-const TeamSection = () => {
+const TeamSection = ({ refData }) => {
   const [activeProfile, setActiveProfile] = useState(profileArray[0]);
 
   return (<div className="mt-[250px] md:mt-[100px] mb-[50px]">
     <MainWidthContainer>
-      <div className="flex flex-col gap-[96px]">
+      <div
+        className="flex flex-col gap-[96px]"
+        ref={refData?.current["Management Team"] ?? null}
+      >
         <div className="flex flex-col items-center">
           <Tags title="Our Team" />
           <h2 className="text-center md:w-[70%]">The steadfast strength and unity of our team.</h2>

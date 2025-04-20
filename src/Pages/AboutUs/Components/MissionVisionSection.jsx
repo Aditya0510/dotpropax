@@ -56,7 +56,6 @@ const MissionVisionComponent = ({ refData }) => {
               <div key={index} className="bg-[#F3F8FF] rounded-[4px] p-[36px] h-[399px] mr-[2%] relative flex flex-col gap-[12px]">
                 <p className="font-[700] text-[24px] leading-[32px] text-center">   {prof.text}</p>
                 <img src={prof?.image} alt={prof?.text} className=" object-fit h-[283px] min-w-[180px]" />
-
               </div>
             ))}
           </div>

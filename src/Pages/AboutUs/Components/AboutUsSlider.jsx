@@ -25,7 +25,6 @@ const AboutUsSlider = ({ scrollToContent, refData }) => {
       { id: 2, src: mainSliderImage2, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
       { id: 3, src: mainSliderImage3, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
     ]
-
   }
 
   HeaderSliderData?.buttons?.forEach(btn => {

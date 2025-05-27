@@ -9,7 +9,8 @@ const HeaderSliderComponent = ({
   buttons = [],
   buttonText = "",
   SliderData = [],
-  descriptionStyle = ''
+  descriptionStyle = '',
+  scrollToYear
 }) => {
   return (
     <div className="bg-[#F3F8FF] pb-[42px]">
@@ -26,7 +27,11 @@ const HeaderSliderComponent = ({
           </Button>}
           {<div className="flex flex-wrap md:flex-row justify-center gap-[12px] my-[40px]">
             {buttons?.map((btn) => (
-              <Button varient="quarternary" text={btn?.text} className="!font-[400]" />
+              <div key={btn.text}>
+                <Button varient="quarternary"
+                  onClick={() => scrollToYear(btn?.text)}
+                  text={btn?.text} className="!font-[400]" />
+              </div>
             ))}
           </div>}
         </div>

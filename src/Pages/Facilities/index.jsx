@@ -6,8 +6,7 @@ import InfrastructureComponent from "./Components/InfrastructureComponent";
 import MainWidthContainer from "../../Layouts/MainWidthContainer";
 import TestingEquipmentsSection from "../../AboutUs/TestingEquipmentsSection";
 import InfrastructureDetail from "./Components/InfrastructureDetail";
-
-
+import React, { useRef } from "react";
 
 const Facilities = () => {
   const HeaderSliderData = {
@@ -26,12 +25,28 @@ const Facilities = () => {
     ]
 
   }
+
+  const refs = useRef({});
+
+  const scrollToContent = (data) => {
+    const node = refs.current[data]?.current;
+    if (node) {
+      node.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  HeaderSliderData?.buttons?.forEach(btn => {
+    if (!refs.current[btn.text]) {
+      refs.current[btn.text] = React.createRef();
+    }
+  });
+
   return (<MainLayout>
-    <HeaderSliderComponent {...HeaderSliderData} descriptionStyle="font-[700] text-[24px] leading-[32px]" />
-    <InfrastructureComponent />
+    <HeaderSliderComponent {...HeaderSliderData} descriptionStyle="font-[700] text-[24px] leading-[32px]" scrollToYear={scrollToContent} />
+    <InfrastructureComponent refData={refs} />
     <InfrastructureDetail />
     <MainWidthContainer className="my-[140px] ">
-      <TestingEquipmentsSection />
+      <TestingEquipmentsSection refData={refs} />
     </MainWidthContainer>
   </MainLayout>)
 }

@@ -2,9 +2,7 @@ import { useRef, useState } from "react";
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import PlayButton from "../../../assets/Icons/PlayButton";
 import mainSliderImage2 from "../../../assets/sliderImages/mainSliderImage2.png";
-const InfrastructureComponent = () => {
-
-
+const InfrastructureComponent = ({ refData }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -14,7 +12,9 @@ const InfrastructureComponent = () => {
   };
   return (<div className="mt-[100px]">
     <MainWidthContainer>
-      <div className="flex flex-col md:flex-row justify-between gap-[50px]">
+      <div
+        ref={refData?.current["Better Infrastructure"] ?? null}
+        className="flex flex-col md:flex-row justify-between gap-[50px]">
         <h2>
           Infrastructure/ Facilities
           <span className="block md:inline">@DOT Propack</span>

@@ -34,11 +34,11 @@ const TestingEquipmentData = [
       "Hot air ovens are electrical devices which use dry heat to sterilize. They were originally developed by Pasteur. Generally, they can be operated from 50 to 300 °C, using a thermostat to control the temperature.",
   },
 ]
-const TestingEquipmentsSection = () => {
+const TestingEquipmentsSection = ({ refData }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px]">
 
-      <div className="">
+      <div className="" ref={refData?.current["Testing Equipment"] ?? null}>
         <Tags title="Testing Equipments" />
         <h2 className="mb-[32px]">Testing Equipments</h2>
         {TestingEquipmentData.map((item, index) => (
@@ -73,7 +73,7 @@ const TestingEquipmentsSection = () => {
           />
         </div>
       </div>
-      
+
     </div>
   )
 }

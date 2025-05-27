@@ -12,6 +12,7 @@ import rollPaper from "../../assets/Products/rollPaper.png"
 import colorRollPaper from "../../assets/Products/colorRollPaper.png"
 import designRollPaper from "../../assets/Products/designRollPaper.png"
 import printedRollPaper from "../../assets/Products/printedRollPaper.png"
+
 const HeroComponent = () => {
   const profileArray = [
     {
@@ -138,11 +139,11 @@ const HeroComponent = () => {
             </div>
           </div>
           <MainWidthContainer className="absolute bottom-[0px] translate-y-[+30%] md:translate-y-[+50%] flex flex-row gap-2 ">
-            <div className="flex gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar py-[40px]">
+            <div className="flex justify-between gap-2 w-full overflow-x-auto whitespace-nowrap hide-scrollbar py-[40px]">
               {ProductArray?.map((prod) => (
                 <div
                   key={prod.image}
-                  className="group relative min-w-[200px] aspect-square transition-all duration-500  hover:mx-[120px]"
+                  className="group relative min-w-[200px] aspect-square transition-all duration-500  hover:mx-[120px] 4xl:hover:mx-[135px]"
                 >
                   {/* Scaling Image Container */}
                   <div
@@ -154,7 +155,6 @@ const HeroComponent = () => {
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000] opacity-45 hidden group-hover:block pointer-events-none"></div>
                   </div>
-
                   {/* Text Block (not inside the scaled container) */}
                   <div className="absolute bottom-0 -left-10 w-full p-4 z-50 hidden group-hover:block transform transition-all duration-500 ">
                     <h6 className="text-white text-lg">{prod.title}</h6>
@@ -165,7 +165,6 @@ const HeroComponent = () => {
                   </div>
                 </div>
               ))}
-
             </div>
           </MainWidthContainer>
         </MainWidthContainer>

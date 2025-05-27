@@ -2,7 +2,8 @@ import { Tags } from "../../../components/Common";
 import GreenTickText from "../../../components/Texts/GreenTickText";
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import bannerImage from "../../../assets/Banners/missionBanner.png";
-const CompleteSolutionSection = () => {
+
+const CompleteSolutionSection = ({ refData }) => {
   const tickTexts = ["Complete solution provider for Speciality Films.",
     "One-stop-shop model from conception to completion",
     "Exceptional quality & Unsurpassed value",
@@ -12,7 +13,10 @@ const CompleteSolutionSection = () => {
   ]
   return (<div className="mt-[100px] mb-[50px]">
     <MainWidthContainer>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-[32px] 3xl:gap-[103px]">
+      <div
+        ref={refData?.current["Why Choose Us"] ?? null}
+        className="grid grid-cols-1 md:grid-cols-2  gap-[32px] 3xl:gap-[103px]"
+      >
         <div className="flex flex-col gap-[24px]">
           <div>
             <Tags title="Why Choose DotpackPro?" />

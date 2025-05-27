@@ -1,7 +1,7 @@
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import statImage from "../../../assets/Banners/statImage.png";
 
-const SalesPerformanceSection = () => {
+const SalesPerformanceSection = ({ refData }) => {
   const mileArray = [{
     number: "1M+",
     text: "Revenue per year"
@@ -17,7 +17,9 @@ const SalesPerformanceSection = () => {
   }]
   return (<div className="bg-[#F3F8FF]">
     <MainWidthContainer>
-      <div className="grid grid-cols-5 py-[100px] gap-[32px] 2xl:gap-[177px]">
+      <div
+        ref={refData?.current["Sales Performance"] ?? null}
+        className="grid grid-cols-5 py-[100px] gap-[32px] 2xl:gap-[177px]">
         <div className="col-span-5 md:col-span-3 flex flex-col gap-[24px]">
           <div>
             <button className="bg-white text-[#2B5592] font-[700] text-[14px]
@@ -26,10 +28,10 @@ const SalesPerformanceSection = () => {
 
           <h2 className="font-[700] text-[48px] leading-[100%] w-[88%]">Sales Performance</h2>
           <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
-          <div className="flex flex-wrap gap-[24px]">
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-[24px] md:mr-[20px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}
-              className="bg-[#FFFFFF] w-[124px]  flex flex-col items-center p-[20px] rounded-[4px] gap-[12px]">
+              className="bg-[#FFFFFF] flex flex-col w-full items-center p-[20px] rounded-[4px] gap-[12px]">
               <h4 className="font-[700] text-[28px] leading-[32px] text-[#2B5592]">{miles?.number}</h4>
               <p className="text-center font-[600] text-[14px] leading-[20px] text-[#565E69]">{miles?.text}</p>
             </div>)}

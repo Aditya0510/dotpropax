@@ -2,8 +2,10 @@ import timeline1 from "../../../assets/Banners/timeLine1.png";
 import timeline2 from "../../../assets/Banners/timeLine2.png";
 import HeaderSliderComponent from "../../../components/Sliders/HeaderSliderComponent";
 import mainSliderImage1 from "../../../assets/sliderImages/mainSliderImage1.png";
+import { useRef } from "react";
 
-const CaseStudiesSlider = () => {
+const CaseStudiesSlider = ({ scrollToYear }) => {
+
   const HeaderSliderData = {
     heading: "Case Studies & Innovation",
     text: "Deals in Plastic Packaging and Speciality films. DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility. ",
@@ -34,10 +36,14 @@ const CaseStudiesSlider = () => {
       { id: 2, src: timeline2, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
       { id: 3, src: mainSliderImage1, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
     ]
-
   }
+
   return (
-    <HeaderSliderComponent {...HeaderSliderData} descriptionStyle="font-[700] text-[24px] leading-[32px]" />
+    <HeaderSliderComponent
+      {...HeaderSliderData}
+      descriptionStyle="font-[700] text-[24px] leading-[32px]"
+      scrollToYear={scrollToYear}
+    />
   )
 }
 export default CaseStudiesSlider;

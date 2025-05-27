@@ -4,6 +4,8 @@ import orangeTick from "../../../assets/Icons/orangeTick.png";
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import mainSliderImage1 from "../../../assets/sliderImages/mainSliderImage1.png";
 import { Tags } from "../../../components/Common";
+import React, { useRef } from "react";
+
 const DescriptionComponent = ({ event }) => {
   return (<div className="col-span-2 flex flex-col pr-6">
     <h5 className="text-[24px] font-[700] leading-[32px] text-[#1d1d1f] ">
@@ -29,7 +31,8 @@ const RoundedTick = () => {
     </div>
   </div>)
 }
-const TimeLineSection = () => {
+const TimeLineSection = ({ refsObj }) => {
+  // const refs = useRef({});
   const events = [
     {
       year: "2016",
@@ -79,6 +82,12 @@ const TimeLineSection = () => {
     },
   ];
 
+  events.forEach(event => {
+    if (!refsObj.current[event.year]) {
+      refsObj.current[event.year] = React.createRef();
+    }
+  });
+
   return (
     <MainWidthContainer className="mb-[150px]">
       <div className="flex flex-col justify-center items-center mb-[60px] gap-[12px]">
@@ -96,6 +105,7 @@ const TimeLineSection = () => {
                 key={index}
                 className={`flex gap-[12px] flex-wrap md:grid md:grid-cols-5  ${isEven ? "" : "md:flex-row-reverse"
                   }`}
+                ref={refsObj.current[event.year]}
               >
                 {/* Left Content */}
                 {isEven ? (

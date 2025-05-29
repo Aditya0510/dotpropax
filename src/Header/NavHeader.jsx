@@ -69,7 +69,6 @@ const NavHeader = () => {
           </ul>
         </nav>
         <div className="flex gap-[32px] items-center">
-          <SearchIcon />
           <div className="flex gap-[12px]">
             <Button varient="secondary" onClick={feedbackToggle}>
               <div className="flex items-center gap-[4px]">

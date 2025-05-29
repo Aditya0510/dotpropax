@@ -3,16 +3,16 @@ import statImage from "../../../assets/Banners/statImage.png";
 
 const SalesPerformanceSection = ({ refData }) => {
   const mileArray = [{
-    number: "1M+",
+    number: "6M+",
     text: "Revenue per year"
   }, {
-    number: "03+",
+    number: "30+",
     text: "Valued Partners"
   }, {
-    number: "10+",
+    number: "25+",
     text: "Satisfied Customer"
   }, {
-    number: "04+",
+    number: "03+",
     text: "New Customers this year"
   }]
   return (<div className="bg-[#F3F8FF]">
@@ -27,7 +27,7 @@ const SalesPerformanceSection = ({ refData }) => {
           </div>
 
           <h2 className="font-[700] text-[48px] leading-[100%] w-[88%]">Sales Performance</h2>
-          <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of.. Effective progress tracking and milestone setting</p>
+          <p className="font-[400] text-[16px] leading-[28px] w-[80%]  text-[#414750]">Effective progress tracking and milestone setting are critical components of Dot Propack's Top Management</p>
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-[24px] md:mr-[20px]">
             {mileArray?.map((miles) => <div
               key={miles?.number}

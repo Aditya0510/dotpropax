@@ -37,7 +37,7 @@ const CustomerComponent = () => {
             <img
               key={index}
               className={`${cust?.className}  w-full 
-               object-contain mix-blend-luminosity  grayscale hover:grayscale-0 hover:mix-blend-normal`}
+               object-contain`}
               src={cust?.image} />
           </div>
         )}

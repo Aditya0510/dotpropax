@@ -7,7 +7,7 @@ const TestingEquipmentData = [
   {
     title: "Tensile Testing Machine",
     description:
-      "A universal testing machine (UTM), also known as a universal tester, materials testing machine or materials test frame, is used to test the tensile strength and compressive strength of materials.",
+      "A Universal Testing Machine (UTM), also known as a universal tester, is used to test the tensile strength, Peel Strength & Elongation of materials at Crosshead Speed.",
   },
   {
     title: "Coefficient of Friction",
@@ -17,22 +17,24 @@ const TestingEquipmentData = [
   {
     title: "Opacity Tester",
     description:
-      "Opacity is an important attribute for packaging materials. The opacity tester is used in packaging industry to check the opacity of packaging materials so that proper type of printing could be used on the materials. Proper detection of opacity can save a lot of money on inks and other expenses.",
-  },
-  {
-    title: "Dart impact Tester",
+      "Opacity is an important attribute for packaging materials. The opacity tester is used in Hygiene & packaging industry to check and verification  of transparency of the film",
+   }, {
+    title: "WTR Tester",
     description:
-      "Falling dart impact is a traditional method for evaluating the impact strength or toughness of a plastic film. This test uses a single dart configuration and a single drop height, while varying the weight of the dart. Test results can be used either as a quality control evaluation or for end use comparisons.",
-  },
-  {
-    title: "Muffle furnace",
-    description: "An Ash test is used to determine if a material is filled.",
-  },
-  {
-    title: "Hot Air oven",
-    description:
-      "Hot air ovens are electrical devices which use dry heat to sterilize. They were originally developed by Pasteur. Generally, they can be operated from 50 to 300 °C, using a thermostat to control the temperature.",
-  },
+      "A Water Vapor Transmission Rate (WVTR) tester used to determination of Water vapour transmission rate through Breathable Film. It determines how much water vapor passes through a material over a specific period.",
+  },{
+    title:"Spectrophotometer",
+    description:"The spectrophotometer is a device designed to measure the amount of light absorbed by a solution at various wave lengths and determine the transmitted light. By using this device we can easily measure & Verify the Colour shade variation in the printed Sample as compare with Standard.",
+  }
+  // {
+  //   title: "Muffle furnace",
+  //   description: "An Ash test is used to determine if a material is filled.",
+  // },
+  // {
+  //   title: "Hot Air oven",
+  //   description:
+  //     "Hot air ovens are electrical devices which use dry heat to sterilize. They were originally developed by Pasteur. Generally, they can be operated from 50 to 300 °C, using a thermostat to control the temperature.",
+  // },
 ]
 const TestingEquipmentsSection = ({ refData }) => {
   return (

@@ -31,7 +31,7 @@ const MissionVisionComponent = ({ refData }) => {
           ref={refData?.current["Mission And Vision"] ?? null}
           className="grid grid-cols-5">
           <div className="col-span-4 flex flex-col gap-[20px]">
-            <h2 className="font-[700]">Mission,Vision, Quality & Policy</h2>
+            <h2 className="font-[700]">Mission, Vision & Certifications</h2>
             <p>Dot Propack is dedicated to continuous improvement in Quality standards, in accordance with the following principles indefining our objectives and goals:</p>
           </div>
           <div className="flex items-end justify-end mb-[30px]">

@@ -9,14 +9,14 @@ import { useEffect, useState } from "react";
 const QualityComponent = () => {
   const [currentTab, setCurrentTab] = useState(1);
   const firstSlide = [{
-    image: mainSliderImage1, text: "17,000 total space 10,000 Sqft fully enclosed production area"
+    image: mainSliderImage1, text: "45,000 Sq. Ft. total space. Over 20,000 Sq. Ft. Fully enclosed production area"
   }, {
     image: mainSliderImage2, text: "Positive air pressure controlled environment for dust free area"
   }];
   const secondSlide = [{
     image: mainSliderImage2, text: "Positive air pressure controlled environment for dust free area"
   }, {
-    image: mainSliderImage1, text: "17,000 total space 10,000 Sqft fully enclosed production area"
+    image: mainSliderImage1, text: "45,000 Sq. Ft. total space. Over 20,000 Sq. Ft. Fully enclosed production area"
   },];
   const [sliderArray, setSliderArray] = useState(firstSlide);
 
@@ -63,7 +63,8 @@ const QualityComponent = () => {
           </div>
           <div>
             <h5 className="font-[700] text-[16px] leading-[28px]">Testing Equipments / Labs</h5>
-            <p className="font-[400] text-[16px] leading-[28px] text-[#414750]">A universal testing machine (UTM), also known as a universal tester, materials testing machine or materials test frame, is used to test the tensile strength and compressive strength of materials.</p>
+            <p className="font-[400] text-[16px] leading-[28px] text-[#414750]">Dot Propack invested in the latest testing equipments providing the highest level of accuracy and customization while keeping the process sustainable. Our company is equipped with a Full-Fledged lab installed with state of art testing equipments like Universal Testing Machine, WVTR Tester, COF Tester, Spectrophotometer Gloss
+Meter, Opacity Tester, etc.</p>
           </div>
         </div>
       </div>

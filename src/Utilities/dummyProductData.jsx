@@ -2,7 +2,7 @@ import SliderImage from "../assets/Banners/homepageBanner.png";
 import Slider2 from "../assets/sliderImages/mainSliderImage1.png";
 export const productSampleData =   {
     id: 1,
-    name: "Cast PE Non Breathable Film",
+    name: "PE Cast Non-Breathable Film",
     features: [
       "We use cast extrusion technology to make PE Embossed films for our hygiene industry customers. Our Embossed films ensure good mechanical properties, excellent product process attributes, and a natural feeling. Consistent processability and minimum machine set-up time are our quality standards.",
     ],

@@ -4,13 +4,13 @@ import InstaIcon from "../assets/Icons/InstaIcon"
 import LinkedInIcon from "../assets/Icons/LinkedInIcon"
 import LocationIcon from "../assets/Icons/LocationIcon"
 import XIcon from "../assets/Icons/XIcon"
-import logo from "../assets/Logo/footerLogo.png"
+import logo from "../assets/Logo/footerLogo.jpg"
 const MainFooter = () => {
   const footerData = {
     productArr: [
-      "Cast PE Non Breathable Film",
-      "Cast PE Breathable Film",
-      "Medical Films",
+      "PE Cast  Non-Breathable Film",
+      "PE Cast Breathable Film",
+      "Medical Film",
       "Adhesive Closure side Tapes",
       "Frontal Tape",
     ],
@@ -20,7 +20,7 @@ const MainFooter = () => {
       "Cookies Policy",
       "Disclaimer",
     ],
-    contactArr: ["+91 8237 026 111", "anil@dotpropack.com"],
+    contactArr: ["+91 8237 026 111", "+91 94232 37300","info@dotpropack.com"],
   }
 
   return (
@@ -33,9 +33,7 @@ const MainFooter = () => {
                 <img src={logo} alt="logo" className="w-[50%] aspect-[3/2] object-contain" />
               </div>
               <p className=" mt-[12px] font-[400] text-[16px] leading-[28px] text-[#8B939F]">
-                Effective progress tracking and milestone setting are critical
-                components of.. Effective progress tracking and milestone
-                setting
+               World-Class Packaging Film & Specility Film manufacturer for Hygiene and Health Care Products.
               </p>
             </div>
             <div className="col-span-3 
@@ -82,8 +80,8 @@ const MainFooter = () => {
           <div className="flex gap-[4px] items-center">
             <LocationIcon className="mt-[4px]" />{" "}
             <p className=" mt-[12px] font-[400] text-[16px] leading-[28px] text-[#8B939F]">
-              Plot No C/11 Part -B, Five Star Shendra MIDC, Dist
-              Aurangabad-431007 Maharashtra India
+              Plot No. C/11, Part -B, Five Star MIDC Area,Shendra,
+              Chhatrapati Sambhajinagar-431154, Maharashtra, India
             </p>
           </div>
         </MainWidthContainer>

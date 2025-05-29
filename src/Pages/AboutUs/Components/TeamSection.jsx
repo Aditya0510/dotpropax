@@ -9,7 +9,7 @@ const profileArray = [
   {
     image: AnilMali,
     name: "Anil Mali",
-    desg: "Director",
+    desg: "Managing Director",
     desc: "Anil Mali is the co- founder and Director of DOT Propack Industries Pvt Ltd.Anil already has a unit named Som AutoTech Pvt.Ltd.which deals in Aluminium diecasting, with this experience he is shaping up the organization as future centre of excellence in automotive components.His area of responsibility included commercial functions and finance."
   }, {
     image: Naresh,
@@ -19,14 +19,14 @@ const profileArray = [
   }, {
     image: AnilKum,
     name: "Anil Kumawat",
-    desg: "Technical Director",
-    desc: "Anil Kumawat is the co- founder and Director of DOT Propack Industries Pvt Ltd.Anil already has a unit named Som AutoTech Pvt.Ltd.which deals in Aluminium diecasting, with this experience he is shaping up the organization as future centre of excellence in automotive components.His area of responsibility included commercial functions and finance."
+    desg: "Executive Director",
+    desc: "Anil is a young and dynamic entrepreneur with 12+ years of experience that does not just straddle Management & Operations, but has also seen him fulfil entrepreneurship and sales & marketing roles. He looks after all Management and production needs. His stints with entrepreneurship came in the form of start-up's such as Dot Propack Industries Pvt Ltd., which he helped found."
 
   }, {
     image: AnilKum,
-    name: "Ajay Sikchi",
-    desg: "Technical Director",
-    desc: "Ajay Sikchi is the co- founder and Director of DOT Propack Industries Pvt Ltd.Anil already has a unit named Som AutoTech Pvt.Ltd.which deals in Aluminium diecasting, with this experience he is shaping up the organization as future centre of excellence in automotive components.His area of responsibility included commercial functions and finance."
+    name: "Ajinkya Sikchi",
+    desg: "Executive Director",
+    desc: "Ajinkya Sikchi is the co- founder and Director of DOT Propack Industries Pvt Ltd.Anil already has a unit named Som AutoTech Pvt.Ltd.which deals in Aluminium diecasting, with this experience he is shaping up the organization as future centre of excellence in automotive components.His area of responsibility included commercial functions and finance."
   }
 ]
 const TeamSection = ({ refData }) => {

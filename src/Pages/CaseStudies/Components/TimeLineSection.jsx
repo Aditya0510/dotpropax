@@ -43,7 +43,7 @@ const TimeLineSection = ({ refsObj }) => {
     {
       year: "2017",
       description:
-        "Developed frontal tapes for adult diaper manufacturing & it is import alternative.",
+        "Developed Frontal Tapes for adult diaper manufacturing & it is import alternative.",
       image: timeline2,
     },
     {
@@ -55,7 +55,7 @@ const TimeLineSection = ({ refsObj }) => {
     {
       year: "2019",
       description:
-        "Developed Magic hook tape & PP Adhesive closure tape manufacturing & it is import alternative.",
+        "Developed Magic hook tape &  Adhesive Closure side Tape manufacturing & it is import alternative.",
       image: timeline1,
     }, {
       year: "2020",
@@ -66,7 +66,7 @@ const TimeLineSection = ({ refsObj }) => {
     {
       year: "2021",
       description:
-        "Developed Magic hook tape & PP Adhesive closure tape manufacturing & it is import alternative.",
+        "Developed Magic hook tape &  Adhesive Closure side Tape manufacturing & it is import alternative.",
       image: timeline1,
     }, {
       year: "2022",
@@ -77,7 +77,7 @@ const TimeLineSection = ({ refsObj }) => {
     {
       year: "2023",
       description:
-        "Developed Magic hook tape & PP Adhesive closure tape manufacturing & it is import alternative.",
+        "Developed Magic hook tape &  Adhesive Closure side Tape manufacturing & it is import alternative.",
       image: timeline1,
     },
   ];

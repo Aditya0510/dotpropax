@@ -29,10 +29,10 @@ const PageHeaderImageSlider = ({ imageList = FacilitySlider, descriptionStyle = 
           <img
             src={images[positions[0]].src}
             alt={images[positions[0]].description}
-            className="w-[100%] aspect-video object-cover opacity-95 transition-opacity duration-700 min-h-[436px] rounded-[12px]"
+            className="w-[100%] aspect-video opacity-95 transition-opacity duration-700 min-h-[436px] rounded-[12px]"
           />
         </div>
-        <div className="w-[100%] md:w-[33%] relative transition-transform duration-700 ease-in-out">
+        <div className="w-[100%] md:w-[33%] relative transition-transform duration-700 ease-in-out bg-white">
           <img
             src={images[positions[1]].src}
             alt={images[positions[1]].description}
@@ -53,7 +53,7 @@ const PageHeaderImageSlider = ({ imageList = FacilitySlider, descriptionStyle = 
           <img
             src={images[positions[2]].src}
             alt={images[positions[2]].description}
-            className="w-[100%] aspect-video object-cover opacity-95 transition-opacity duration-700 min-h-[436px] rounded-[12px]"
+            className="w-[100%] aspect-video  opacity-95 transition-opacity duration-700 min-h-[436px] rounded-[12px]"
           />
         </div>
       </div>

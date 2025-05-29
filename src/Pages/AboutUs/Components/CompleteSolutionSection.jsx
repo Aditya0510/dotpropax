@@ -19,13 +19,13 @@ const CompleteSolutionSection = ({ refData }) => {
       >
         <div className="flex flex-col gap-[24px]">
           <div>
-            <Tags title="Why Choose DotpackPro?" />
+            <Tags title="Why Choose Dot Propack?" />
             <h2 className="font-[700] text-[48px]">Dot Propack</h2>
           </div>
 
           <p className="font-[400] text-[16px] leading-[28px] text-[#565E69]">We mainly cater Hygiene product manufacturers by supplying them PE back sheet, PE laminated with non-woven film. We also cater to flexible packaging industry.</p>
           <p className="font-[700] text-[16px] leading-[24px] text-[#414750]">
-            Our plant is situated in Five Star Shendra MIDC in Aurangabad, Maharashtra, India near Mumbai Jawaharlal Nehru Port Trust, India.
+            Our plant is situated in Five Star Shendra MIDC in Chh. Sambhajinagar, Maharashtra, India near Mumbai Jawaharlal Nehru Port Trust, India.
           </p>
           <p className="font-[400] text-[16px] leading-[28px] text-[#565E69]">Our product ranges are manufactured according to international specification at the state of art manufacturing plant with area of 17000 sqft. The manufacturing area is fully enclosed and having positive air pressure system which keeps the area dust free, clean and cool.
             Nowadays, consumers are demanding higher levels of softness, comfort, skincare and fluid management in baby diapers, adult incontinence and feminine hygiene products. By doing extensive studies we have go to know global consumer preferences which allows us to provide the hygiene product manufacturer with unique products to satisfy there consumer needs. Our innovations are driving improvements in the performance of feminine hygiene, baby diaper, and adult incontinence products.</p>

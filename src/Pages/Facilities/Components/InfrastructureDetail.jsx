@@ -11,7 +11,7 @@ const InfrastructureDetail = () => {
     {
       title: "Total Space",
       description:
-        "17,000 total space 10,000 Sqft fully enclosed production area",
+        "45,000 Sq. Ft. Total Space. over 20,000 Sq. Ft. Fully enclosed production area",
     },
     {
       title: "Dosing system",
@@ -24,7 +24,7 @@ const InfrastructureDetail = () => {
     },
     {
       title: "Machines",
-      description: "Multilayer Cast Extrusion Machine and High Speed Slitting Machines",
+      description: "Multilayer Breathable and Non-Breathable High speed Cast Film Extrusion Lines with world Class Supporting Units such as Defect Detection, GSM Scanner, etc, Along with this, we have Best in Hygiene Film auto alignment and Auto tension controller High speed Slitting Machines.",
     },
     {
       title: "T Die",
@@ -32,7 +32,7 @@ const InfrastructureDetail = () => {
     },
     {
       title: "FlexoPrinting",
-      description: "Taiwanese 6 Color CI flexoPrinting Machine and Separate raw material storage area",
+      description: "Top Class upto six colors 2 Cl flexo Printing Machines which provides best printing quality of Hygiene FIlm.",
     },
   ]
   return (<MainWidthContainer className="mt-[140px]">

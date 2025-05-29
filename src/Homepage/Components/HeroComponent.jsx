@@ -2,7 +2,7 @@
 import homepageBanner from "../../assets/Banners/homepageBanner.png"
 import ArrowIcon from "../../assets/Icons/ArrowIcon"
 import Button from "../../components/Button"
-import tuvImage from "../../assets/Logo/tuvNord.png"
+import tuvImage from "../../assets/Logo/tuvIndiaLogo.jpeg"
 import profile1 from "../../assets/ProfileImages/profile1.jfif"
 import profile2 from "../../assets/ProfileImages/profile2.jfif"
 import profile3 from "../../assets/ProfileImages/profile3.jfif"
@@ -29,27 +29,27 @@ const HeroComponent = () => {
   const ProductArray = [
     {
       image: rollPaper,
-      title: "Cast PE non-breathable film",
+      title: "PE Cast  Non-Breathable Film",
       desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: colorRollPaper,
-      title: "Cast PE non-breathable film",
+      title: "PE Cast Non-Breathable Film",
       desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: designRollPaper,
-      title: "Cast PE non-breathable film",
+      title: "PE Cast Non-Breathable Film",
       desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: printedRollPaper,
-      title: "Cast PE non-breathable film",
+      title: "PE Cast  Non-Breathable Film",
       desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
     {
       image: printedRollPaper,
-      title: "Cast PE non-breathable film",
+      title: "PE Cast  Non-Breathable Film",
       desc: "lorem ipsum lorem ipsun lorem ipsumm..."
     },
   ]
@@ -76,7 +76,7 @@ const HeroComponent = () => {
 
               <div className="relative">
                 <h2 className="font-sans font-bold text-[40px] md:text-[48px]  leading-[56px] md:leading-[140%] tracking-[0%] text-white drop-shadow-[0px_4px_4px_rgba(0,0,0,1)]">
-                  Delivering World-Class Plastic Packaging and Speciality Films
+                  Delivering World-Class Packaging Films and Speciality Films
                   for Hygiene and Health Care
                 </h2>
                 <div className="flex ms-[10%]">
@@ -95,8 +95,8 @@ const HeroComponent = () => {
                 </Button>
               </div>
               <div>
-                <img src={tuvImage} alt="tuv image" />
-                <p className="text-white font-[400] text-[16px] leading-[28px]">ISO 900:2015 Certified Company</p>
+                <img src={tuvImage} alt="tuv image" className="h-[120px] w-[200px]" />
+                <p className="text-white font-[400] text-[16px] leading-[28px]">ISO 9001:2015 Certified Company</p>
               </div>
             </div>
 

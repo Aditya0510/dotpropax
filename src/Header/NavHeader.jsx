@@ -52,7 +52,7 @@ const NavHeader = () => {
             className=" me-[8px] lg:hidden">
             <HamburgerIcon />
           </button>
-          <img src={dotProLogo} alt="dot pro logo" onClick={() => navigate('/')} className="cursor-pointer w-[100px] h-[58px]" />
+          <img src={dotProLogo} alt="dot pro logo" onClick={() => navigate('/')} className="cursor-pointer w-[100px] h-[100px]" />
         </div>
 
         <nav>

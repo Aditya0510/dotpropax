@@ -8,7 +8,7 @@ import { productSampleData } from "../../Utilities/dummyProductData"
 
 const HeaderSliderData = {
   heading: "Products",
-  text: "We collaborate with industry-leading Products who share our commitment to innovation, reliability, and excellence. Their expertise and support enable us to deliver seamless solutions and exceptional value to our customers. Together, we drive growth, efficiency, and success across every project we undertake.",
+  text: "Dot Propack always commited to provide superior Quality Products and on time delivery to our Consumers. With the help of Highly experienced team and state of the art machinery, we are delivering seamless solutions and exceptional value to our cusumers.",
   buttons: [],
 
   SliderData: [

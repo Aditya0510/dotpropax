@@ -95,7 +95,7 @@ const MissionComponent = () => {
             {!isPlaying && <div className="absolute bottom-0 w-full h-full bg-[#00000050]"></div>}
           </div>
           <div className="col-span-2 md:col-span-1">
-            <Tags title="Why DotpackPro is Best?" className="mb-[16px]" />
+            <Tags title="Why Dot Propack is Best?" className="mb-[16px]" />
             <div className="flex flex-col gap-[24px] mt-[12px]">
               <h3 className="md:w-[57%] leading-[100%]"
               >
@@ -106,11 +106,10 @@ const MissionComponent = () => {
                 Opportunity is what you Give, Satisfaction is what you Get
               </p>
               <p className="font-[400] text-[16px] leading-[28px] tracking-[0%] text-[#414750] ">
-                Dot Propack Industries Pvt Ltd. deals in Plastic Packaging and
-                Speciality films. DOT Propack is one of the leading
-                manufacturers of Cast Polyethylene and Polypropylene Films, with
-                facility of Central Impression Flexographic Printing machine
-                upto Six Colors and Extrusion Lamination facility.
+              DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility.
+               We mainly cater Hygiene product manufacturers by supplying them PE back sheet (Breathable & Non Breathable), 
+               PE laminated with non-woven film, Frontal film & Adhesive side tapes (Baby diaper/Adult diaper). 
+               We also cater to flexible packaging industry.
               </p>
               <div>
                 <Button>

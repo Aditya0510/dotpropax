@@ -8,7 +8,7 @@ const CaseStudiesSlider = ({ scrollToYear }) => {
 
   const HeaderSliderData = {
     heading: "Case Studies & Innovation",
-    text: "Deals in Plastic Packaging and Speciality films. DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility. ",
+    text: "Deals in Hygiene Films and Speciality films. DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility. ",
     buttons: [{
       text: "2016"
     }, {
@@ -32,9 +32,9 @@ const CaseStudiesSlider = ({ scrollToYear }) => {
     ],
 
     SliderData: [
-      { id: 1, src: timeline1, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
-      { id: 2, src: timeline2, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
-      { id: 3, src: mainSliderImage1, description: "We intend to provide world class solution in Cast PE films, CPP Films, Lamination Films and Printed Film" },
+      { id: 1, src: timeline1, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
+      { id: 2, src: timeline2, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
+      { id: 3, src: mainSliderImage1, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
     ]
   }
 

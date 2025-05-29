@@ -11,7 +11,7 @@ import React, { useRef } from "react";
 const Facilities = () => {
   const HeaderSliderData = {
     heading: "Dot Propack Facilities",
-    text: "Deals in Plastic Packaging and Speciality films. DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility. ",
+    text: "Dot Propack have a modern Hygiene Film Manufacturing Facility setup with dedicated 20000 Sq. Mtr area in Air Conditioned & Positive air Pressure to maintain Hygiene of the product.",
     buttons: [{
       text: "Better Infrastructure"
     }, {

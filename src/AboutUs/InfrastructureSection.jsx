@@ -5,7 +5,7 @@ const infrastructure = [
   {
     title: "Total Space",
     description:
-      "17,000 total space 10,000 Sqft fully enclosed production area",
+      "45,000 Sq. Ft. total space. Over 20,000 Sq. Ft. Fully enclosed production area",
   },
   {
     title: "Dosing system",

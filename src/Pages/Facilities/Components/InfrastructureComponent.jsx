@@ -20,8 +20,8 @@ const InfrastructureComponent = ({ refData }) => {
           <span className="block md:inline">@DOT Propack</span>
         </h2>
         <div className="flex flex-col gap-[15px] md:max-w-[50%]">
-          <p className="font-[400] text-[16px] leading-[28px] text-[#414750] ">Ancillaries: We have all other ancillaries required for Machine like, Chilling plant, AHU for Positive air pressure, Compressor etc
-            Laboratory Set up. : Tensile and Elongation strength tester, COF, Dart Impact, Muffle Furnace, Densitometer, Opacity, MFI, Corona Dyne Testing, Oven, GSM</p>
+          <p className="font-[400] text-[16px] leading-[28px] text-[#414750] ">Ancillaries: We have all other ancillaries required for Machine like Chiller plant, AHU for Positive air pressure, Compressor, etc.
+Quality Lab: Tensile tester, COF Tester, Opacity Tester, MFI Tester, Corona Dyne Testing, Gloss, GSM, Thickness, Core Strength, WVTR Tester, etc.</p>
           <h5 className="font-[700] text-[24px] leading-[32px]">- CEO of Dot Pro Pack</h5>
         </div>
       </div>

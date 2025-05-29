@@ -9,7 +9,7 @@ import FeedbackComponent from "../../Homepage/Components/FeedbackComponent"
 
 const HeaderSliderData = {
   heading: "Dot Propack Valuable Customers",
-  text: "Deals in Plastic Packaging and Speciality films. DOT Propack is one of the leading manufacturers of Cast Polyethylene and Polypropylene Films, with facility of Central Impression Flexographic Printing machine upto Six Colors and Extrusion Lamination facility. ",
+  text: "Dot Propack always commitment to provide one stop solution for hygiene product manufacturer. Dot Propack aims to deliver seamless solutions and exceptional value to our customers. With the help of World class Machinary & Experienced staff Dot propack aims to provide Exceptional quality products at Unsurpassed value.",
   buttons: [
     {
       text: "Trust",

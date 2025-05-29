@@ -1,12 +1,12 @@
 import { NavLink, Route, useNavigate } from "react-router-dom";
-import dotProLogo from "../assets/Logo/dotProLogo.png";
+import dotProLogo from "../assets/Logo/dotProLogo.jpeg";
 import SearchIcon from "../assets/Icons/SearchIcon";
 import Button from "../components/Button";
 import PhoneIcon from "../assets/Icons/PhoneIcon";
 import FeedbackIcon from "../assets/Icons/FeedbackIcon";
 import MainWidthContainer from "../Layouts/MainWidthContainer";
 import { RoutesLink } from "../Utilities/RoutesLink";
-import HamburgerIcon from "../assets/Icons/HamburgerIcon";
+import HamburgerIcon from "../assets/Icons/HamburgerIcon";  
 import { useState } from "react";
 import Modal from "../components/Modal";
 import Feedbackform from "../components/Forms/FeedbackForm";

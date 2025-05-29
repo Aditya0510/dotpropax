@@ -13,9 +13,17 @@ const ContactHeader = () => {
       <MainWidthContainer className="">
         <div className="flex justify-center sm:justify-between">
           <div className="flex gap-[8px]">
-            <Link className="contact-text"><PhoneIcon /> +91 8237 026 111</Link>
-            <span className="text-[#8B939F]">|</span>
-            <Link className="contact-text"><MailIcon /> anil@dotpropack.com</Link>
+           <a href="tel:+918237026111" className="contact-text flex items-center gap-1">
+      <PhoneIcon /> +91 8237 026 111
+    </a>
+    <span className="text-[#8B939F]">|</span>
+    <a href="tel:+919423237300" className="contact-text flex items-center gap-1">
+      <PhoneIcon /> +91 94232 37300
+    </a>
+    <span className="text-[#8B939F]">|</span>
+    <a href="mailto:info@dotpropack.com" className="contact-text flex items-center gap-1">
+      <MailIcon /> info@dotpropack.com
+    </a>
           </div>
           <div className="hidden sm:flex gap-[12px] ">
             <Link><FbIcon />

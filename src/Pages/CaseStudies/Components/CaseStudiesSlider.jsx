@@ -32,9 +32,9 @@ const CaseStudiesSlider = ({ scrollToYear }) => {
     ],
 
     SliderData: [
-      { id: 1, src: timeline1, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
-      { id: 2, src: timeline2, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
-      { id: 3, src: mainSliderImage1, description: "We intend to provide world class solution in PE Cast films, CPP Films, Lamination Films and Printed Film" },
+      { id: 1, src: timeline1, description: "We intend to provide world class solution in PE Cast films, Frontal films, Adhesive closure side tape,  Lamination Films and Printed Film" },
+      { id: 2, src: timeline2, description: "We intend to provide world class solution in PE Cast films, Frontal films, Adhesive closure side tape,  Lamination Films and Printed Film" },
+      { id: 3, src: mainSliderImage1, description: "We intend to provide world class solution in PE Cast films, Frontal films, Adhesive closure side tape,  Lamination Films and Printed Film" },
     ]
   }
 

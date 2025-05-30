@@ -19,7 +19,7 @@ const TestingEquipmentData = [
     description:
       "Opacity is an important attribute for packaging materials. The opacity tester is used in Hygiene & packaging industry to check and verification  of transparency of the film",
    }, {
-    title: "WTR Tester",
+    title: "WVTR Tester",
     description:
       "A Water Vapor Transmission Rate (WVTR) tester used to determination of Water vapour transmission rate through Breathable Film. It determines how much water vapor passes through a material over a specific period.",
   },{

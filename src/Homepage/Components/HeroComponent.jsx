@@ -157,8 +157,7 @@ const HeroComponent = () => {
                   </div>
                   {/* Text Block (not inside the scaled container) */}
                   <div className="absolute bottom-0 -left-10 w-full p-4 z-50 hidden group-hover:block transform transition-all duration-500 ">
-                    <h6 className="text-white text-lg">{prod.title}</h6>
-                    <p className="text-white my-2 text-sm">{prod.desc}</p>
+                    <h6 className="text-white text-lg mb-[10px]">{prod.title}</h6>
                     <Button>
                       Get More Details <ArrowIcon />
                     </Button>

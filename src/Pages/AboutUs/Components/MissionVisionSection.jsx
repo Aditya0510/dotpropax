@@ -2,12 +2,11 @@ import { useState } from "react";
 import ArrowIcon from "../../../assets/Icons/ArrowIcon";
 import MainWidthContainer from "../../../Layouts/MainWidthContainer";
 import valueDoc from "../../../assets/Banners/valueDoc.png";
+import certificate from "../../../assets/Banners/certificate.png";
 const sliderArray = [
-  { text: "Values", image: valueDoc },
   { text: "Vision", image: valueDoc },
   { text: "Mission", image: valueDoc },
-  { text: "TMP Policy", image: valueDoc },
-  { text: "Quality", image: valueDoc },
+  { text: "Certificates", image: certificate }
 ]
 
 const MissionVisionComponent = ({ refData }) => {

@@ -68,7 +68,7 @@ const MissionComponent = () => {
     <div className="mt-[170px] md:mt-[320px]">
       <MainWidthContainer>
         <h2 className="text-[#14181F] md:w-[50%]">
-          High Quality hygiene films at effective price & On time delivery.
+          High Quality hygiene films at effective price.
         </h2>
         <MainNavbar NavArray={NavArray} activeTab={2} />
         <div className="mt-[60px] md:mt-[136px] grid grid-cols-2 gap-[24px]">
